@@ -36,8 +36,10 @@ const Vacancytable = (props:table) => {
   const [experience, setExperience] = React.useState(false);
   const [deleteiRow, setDeleteRow] = React.useState(false);
 
-  const MainDutiesClickOpen = () => {
+  const MainDutiesClickOpen = (row:number) => {
     setMainDuties(true);
+    let MaindutieDialog = row;
+    
   };
 
   const MainDutiesClickClose = () => {
@@ -81,9 +83,10 @@ const Vacancytable = (props:table) => {
             <td>{Vacancy.department}</td>
             <td>{Vacancy.publishDate}</td>
             <td>{Vacancy.location}</td>
-            <td>
+            <td key={Vacancy.id} >
               <div className=" tb-icon">
-                <FileOpenOutlinedIcon className=" tb-icon action-buttons" onClick={MainDutiesClickOpen} />
+                <FileOpenOutlinedIcon className=" tb-icon action-buttons" onClick={()=>{MainDutiesClickOpen(Vacancy.id)}} />
+        
                 <Dialog
         open={mainDuties}
         onClose={MainDutiesClickClose}

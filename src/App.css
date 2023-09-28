@@ -127,7 +127,7 @@ th {
   position: sticky;
   top: 0;
   z-index: auto;
-  background-color: white;
+  background-color: white;  
 }
 .Table-container::-webkit-scrollbar {
   width: 3px;
@@ -168,6 +168,8 @@ body::-webkit-scrollbar {
   padding-left: 10px;
   transition-duration: 400ms;
   color: #11a4a3;
+  list-style-type:disc;
+
 }
 
 .nav-button {
@@ -175,11 +177,7 @@ body::-webkit-scrollbar {
 }
 .nav-btn-boder {
   border-bottom: 0.5px dashed rgb(228, 225, 225);
-}
-
-.nav-button:hover {
-  color: #11a4a3;
-}
+} 
 
 .button-div {
   padding-left: 8px;
@@ -189,7 +187,7 @@ body::-webkit-scrollbar {
   border-bottom: px solid rgb(228, 225, 225);
 }
 .list-type {
-  padding: 10px 0px 0px 15px;
+  padding: 0px 0px 9px 15px;
   list-style-type: circle !important;
 }
 .shadows {
@@ -335,8 +333,9 @@ tr:nth-child(odd) {
   display: flex;
   align-items: center;
   font-weight: 600;
-  color: rgb(113, 113, 113);
-}
+}     
+
+
 .navbar-icon {
   text-align: center;
   font-size: 14px;

@@ -104,7 +104,7 @@ const Addjobvacancy = () => {
                   // name="Department"
                   id="Department"
                   {...register("Department")}
-                  className=" outline-none  text-[#7987AD] w-full h-11 flex items-center"
+                  className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
                 >
                   <option value="">Select Department</option>
                   <option value="Department 1" className="drop-option">
@@ -131,7 +131,7 @@ const Addjobvacancy = () => {
                   // name="Location"
                   id="Location"
                   {...register("Location")}
-                  className=" outline-none  text-[#7987AD] w-full h-11 flex items-center"
+                  className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
                 >
                   <option value="">Select Location</option>
                   <option value="Location 1" className="drop-option">

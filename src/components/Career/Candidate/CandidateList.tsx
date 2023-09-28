@@ -29,6 +29,7 @@ const Transition = React.forwardRef(function Transition(
 const Candidatelist = () => {
   const [currentPage, setCurrentPage] = React.useState(1);
   const [entries, setEntries] = React.useState(10);
+  const [search,setSearch]=React.useState("");
 
 
   return (
@@ -59,41 +60,25 @@ const Candidatelist = () => {
 
       {/* input fields */}
 
-      <div className="shadows  p-[24px] mb-4  xl:flex lg:items-center lg:justify-between bg-white">
-        <div className=" px -[12px]">
-          <span className="flex justify-center font-bold">Candidate List</span>
-        </div>
+      <div className="shadows  p-[24px] mb-4  xl:flex lg:items-center  bg-white">
+        
 
-        <div className="flex flex-col  gap-y-7 mt-3 md:flex-row gap-x-6 lg:mt-0 w-full xl:w-[75%]">
+        <div className="flex flex-col  gap-y-7 mt-3 md:flex-row justify-evenly gap-x-6 lg:mt-0 w-full ">
           <input
             type="text"
             placeholder="Search by catogory title"
-            className="border-[1px] w-[full] border-gray-200  rounded-lg outline-none px-[12px] h-12 md:w-[50%]  "
+            className="border-[1px] w-[full] border-gray-200  rounded-lg outline-none px-[12px] h-12 md:w-[80%]  "
+            value={search}
+            onChange={(e)=>setSearch(e.target.value)}
+            
+            
           />
 
-          <div className="border-[1px] w-full  border-gray-200 rounded-lg px-[10px] h-12 md:w-[25%]">
+          <div className="border-[1px] w-full  border-gray-200 rounded-lg px-[10px] h-12 md:w-[20%]">
             <select
               name="catogory"
               id="catogory"
-              className=" outline-none  text-[#7987AD] w-full h-11 flex items-center"
-            >
-              <option value="catogory">catogory</option>
-              <option value="1" className="drop-option">
-                1
-              </option>
-              <option value="2" className="drop-option">
-                2
-              </option>
-              <option value="3" className="drop-option">
-                3
-              </option>
-            </select>
-          </div>
-          <div className="border-[1px] w-full  border-gray-200 rounded-lg px-[10px] h-12 md:w-[25%]">
-            <select
-              name="catogory"
-              id="catogory"
-              className=" outline-none  text-[#7987AD] w-full h-11 flex items-center"
+              className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
               value={entries}
               onChange={(e) => setEntries(parseInt(e.target.value))}
             >
@@ -113,7 +98,7 @@ const Candidatelist = () => {
       </div>
 
       {/* candidate table */}
-      <div className=" shadows max-h-[496px] overflow-scroll xl:overflow-x-hidden p-[24px] pt-0 bg-white mb-[15px]">
+      <div className=" shadows max-h-[496px] overflow-scroll overflow-x-scroll p-[24px] pt-0 bg-white mb-[15px]">
         <CandidateTable entries={entries} currentPage={currentPage} />
       </div>
 

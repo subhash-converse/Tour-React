@@ -14,10 +14,7 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import img from "../assets/images/1.jpg";
-import logo from "../assets/images/logo.png";
-import Candidatelist from "../components/Career/Candidate/CandidateList";
-import Vacancylist from "../components/Career/Vacancy/VacancyList";
-import Addjovvacancy from "../components/Career/AddJob";
+import logo from "../assets/images/logo.png"; 
 
 interface CommonLayoutProps {
   children: ReactNode;
@@ -25,28 +22,30 @@ interface CommonLayoutProps {
 
 const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
   const [packageVisible, setPackageVisible] = useState(false);
-  const [packageButtonColor, setPackageButtonColor] = useState("black");
+  const [packageButtonColor, setPackageButtonColor] = useState("#717171");
   const [userListVisible, setUserListVisible] = useState(false);
-  const [userButtonColor, setUserButtonColor] = useState("black");
-  const [CareerListVisible, setCareerListVisible] = useState(true);
-  const [careerButtonColor, setCareerButtonColor] = useState("black");
+  const [userButtonColor, setUserButtonColor] = useState("#717171");
+  const [careerListVisible, setCareerListVisible] = useState(false);
+  const [careerButtonColor, setCareerButtonColor] = useState("#717171");
   const [navVisible, setNavVisible] = useState(true);
 
   const packageToggle = () => {
     setPackageVisible(!packageVisible);
-    setPackageButtonColor(packageButtonColor ? "black" : "#20B2AA");
-    console.log(userButtonColor);
+    setPackageButtonColor(packageVisible ? "#717171" : "#20B2AA");
+    console.log(packageButtonColor);
+    console.log(packageVisible);
   };
 
   const userToggle = () => {
     setUserListVisible(!userListVisible);
-    setUserButtonColor(userListVisible ? "black" : "#20B2AA");
+    setUserButtonColor(userListVisible ? "#717171" : "#20B2AA");
     console.log(userButtonColor);
   };
 
   const careerToggle = () => {
-    setCareerListVisible(!CareerListVisible);
-    setCareerButtonColor(CareerListVisible ? "#20B2AA" : "black");
+    setCareerListVisible(!careerListVisible);
+    setCareerButtonColor(careerListVisible ? "#717171" : "#20B2AA");
+    console.log(careerButtonColor);
   };
 
   const navication = () => {
@@ -60,10 +59,10 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
   return (
     <div className="h-screen ">
       {/* logo,search */}
-      <div className="w-full sticky top-0 flex border-b-[1px] border-gray-200 h-[60px] ">
+      <div className="w-full sticky top-0 flex border-b-[1px] border-gray-100 h-[60px] ">
         {/* logo */}
         {navVisible ? (
-          <div className="menu-bar  bg-white  border-r-[1px] border-gray-200 pt-1 flex items-center min-w-[240px] px-[25px] ">
+          <div className="menu-bar  bg-white  border-r-[1px] border-gray-200 pt-1 flex items-center min-w-[245px] px-[25px] ">
             <a href="" className="w-full">
               <img
                 src={logo}
@@ -121,9 +120,9 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
       {/* sidebar,contents */}
       <div className="flex">
         {navVisible ? (
-          <div className="menu-bar  fixed pt-[25px] pb-[50px] z-10 bg-white flex flex-col h-[92vh] border-r-[1px] border-gray-200 lg:relative lg:inline-block min-w-[240px]  ">
+          <div className="menu-bar  fixed pt-[25px] pb-[50px] z-10 bg-white flex flex-col h-[92vh] border-r-[1px] border-gray-200 lg:relative lg:inline-block min-w-[245px]  ">
             {/* pack management */}
-            <div className=" px-[25px] border-b-[1px] border-dashed border-gray-200">
+            <div className=" px-[25px] border-b-[1px] border-dashed border-gray-100">
               <button
                 className="nav-button flex items-center py-[10px] justify-betweenc  w-full "
                 style={{ color: packageButtonColor }}
@@ -133,14 +132,15 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
                   <span className="text-start">
                     <FontAwesomeIcon
                       icon={faBriefcase}
+                      style={{ color: packageButtonColor }}
                       className="navbar-icon"
                     />
                   </span>
                   <div className="w-full flex justify-between pl-2 ">
-                    <span className="navbar-list">PackageManagement</span>
+                    <span className="navbar-list">Package Management</span>
                     <span className="text-[#6A6B6B]">
                       {packageVisible ? (
-                        <ExpandLessIcon />
+                        <ExpandLessIcon style={{ color: packageButtonColor }} />
                       ) : (
                         <ExpandMoreIcon />
                       )}
@@ -161,7 +161,7 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
             </div>
 
             {/* user management */}
-            <div className="px-[25px] border-b-[1px] border-dashed border-gray-200">
+            <div className="px-[25px] border-b-[1px] border-dashed border-gray-100">
               <button
                 className="flex items-center  py-[10px] w-full  nav-button"
                 style={{ color: userButtonColor }}
@@ -169,13 +169,17 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
               >
                 <span className="flex items-center w-full ">
                   <span className=" text-start">
-                    <FontAwesomeIcon icon={faUser} className="navbar-icon" />
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      className="navbar-icon"
+                      style={{ color: userButtonColor }}
+                    />
                   </span>
                   <div className="w-full flex justify-between pl-2">
                     <span className="navbar-list">User Management</span>
                     <span className="text-[#6A6B6B]">
                       {userListVisible ? (
-                        <ExpandLessIcon />
+                        <ExpandLessIcon style={{ color: userButtonColor }} />
                       ) : (
                         <ExpandMoreIcon />
                       )}
@@ -193,7 +197,7 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
             </div>
 
             {/* candidate */}
-            <div className=" px-[25px] border-b-[1px] border-dashed border-gray-200">
+            <div className=" px-[25px] border-b-[1px] border-dashed border-gray-100">
               <button
                 className="nav-button flex items-center py-[10px] justify-betweenc  w-full "
                 style={{ color: careerButtonColor }}
@@ -203,14 +207,15 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
                   <span className="text-start">
                     <FontAwesomeIcon
                       icon={faBriefcase}
+                      style={{ color: careerButtonColor }}
                       className="navbar-icon"
                     />
                   </span>
                   <div className="w-full flex justify-between pl-2 ">
                     <span className="navbar-list">Career Management</span>
-                    <span className="text-[#6A6B6B]">
-                      {CareerListVisible ? (
-                        <ExpandLessIcon />
+                    <span>
+                      {careerListVisible ? (
+                        <ExpandLessIcon style={{ color: careerButtonColor }} />
                       ) : (
                         <ExpandMoreIcon />
                       )}
@@ -218,7 +223,7 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
                   </div>
                 </span>
               </button>
-              {CareerListVisible && (
+              {careerListVisible && (
                 <ul className="list-type">
                   <li className="nav-list">
                     <a href="/"> All Candidate List</a>
@@ -234,12 +239,66 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
             </div>
           </div>
         ) : (
-          <div></div>
+          <div className="menu-bar  fixed pt-[25px] pb-[50px] z-10 bg-white flex flex-col h-[92vh] border-r-[1px] border-gray-200 lg:relative lg:inline-block min-w-[70px]  ">
+            {/* pack management */}
+            <div className=" px-[25px] border-b-[1px] border-dashed border-gray-100">
+              <button
+                className="nav-button flex items-center py-[10px] justify-betweenc  w-full "
+                style={{ color: packageButtonColor }}
+                onClick={packageToggle}
+              >
+                <span className="flex  items-center w-full">
+                  <span className="text-start">
+                    <FontAwesomeIcon
+                      icon={faBriefcase}
+                      className="navbar-icon"
+                    />
+                  </span>
+                </span>
+              </button>
+            </div>
+
+            {/* user management */}
+            <div className="px-[25px] border-b-[1px] border-dashed border-gray-100">
+              <button
+                className="flex items-center  py-[10px] w-full  nav-button"
+                style={{ color: userButtonColor }}
+                onClick={userToggle}
+              >
+                <span className="flex items-center w-full ">
+                  <span className=" text-start">
+                    <FontAwesomeIcon icon={faUser} className="navbar-icon" />
+                  </span>
+                </span>
+              </button>
+            </div>
+
+            {/* candidate */}
+            <div className=" px-[25px] border-b-[1px] border-dashed border-gray-100">
+              <button
+                className="nav-button flex items-center py-[10px] justify-betweenc  w-full "
+                style={{ color: careerButtonColor }}
+                onClick={careerToggle}
+              >
+                <span className="flex  items-center w-full">
+                  <span className="text-start">
+                    <FontAwesomeIcon
+                      icon={faBriefcase}
+                      className="navbar-icon"
+                    />
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
         )}
 
         {/* table or form content */}
         <div className="table-con shadow-inner flex flex-col bg-[#F9FAFB] shadow-gray-200 overflow-scroll w-full lg:h-[93vh]  md:justify-between ">
-          <div className="p-[25px]"> <main>{children}</main></div>
+          <div className="p-[25px]">
+            {" "}
+            <main>{children}</main>
+          </div>
 
           {/* copy right */}
           <div className=" w-full flex px-[25px] py-2 flex-col text-[#029e9d] text-[13px] items-center border-t-[1px] border-gray-200 md:flex-row md: justify-between">

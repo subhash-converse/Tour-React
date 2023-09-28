@@ -16,18 +16,10 @@ const Transition = React.forwardRef(function Transition(
 });
 
 const Vacancylist = () => {
-  // const [open, setOpen] = React.useState(false);
-  const [entries, setEntries] = React.useState(10);
+;  const [entries, setEntries] = React.useState(10);
   const [currentPage, setCurrentPage] = React.useState(1);
 
-  // const handleClickOpen = () => {
-  //   setOpen(true);
-
-  // };
-
-  // function handleClickOpen(x: any) {
-  //   return setOpen(true);
-  // }
+ 
 
   return (
     <div className="">
@@ -71,7 +63,7 @@ const Vacancylist = () => {
             <select
               name="catogory"
               id="catogory"
-              className="drop-down outline-none  text-[#7987AD] w-full h-11 flex items-cente"
+              className="drop-down outline-none bg-white text-[#7987AD] w-full h-11 flex items-cente"
             >
               <option value="Show Entries">Department</option>
               <option value="10" className="drop-option">
@@ -90,7 +82,7 @@ const Vacancylist = () => {
             <select
               name="catogory"
               id="catogory"
-              className=" outline-none  text-[#7987AD] w-full h-11 flex items-center"
+              className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
             >
               <option value="Show Entries">Location</option>
               <option value="10" className="drop-option">
@@ -109,7 +101,7 @@ const Vacancylist = () => {
             <select
               name="catogory"
               id="catogory"
-              className=" outline-none  text-[#7987AD] w-full h-11 flex items-center"
+              className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
               value={entries}
               onChange={(e) => setEntries(parseInt(e.target.value))}
             >
