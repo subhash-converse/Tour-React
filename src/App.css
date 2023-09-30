@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
   border-radius: 10px;
 }
 
-.table-con::-webkit-scrollbar {
+.hide-scroll::-webkit-scrollbar{
   display: none;
 }
 

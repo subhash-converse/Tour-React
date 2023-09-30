@@ -1,10 +1,10 @@
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBackspace,
   faFileExport,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as React from "react";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -12,10 +12,9 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
-import { TransitionProps } from "@mui/material/transitions";
+import { TransitionProps } from "@mui/material/transitions"; // Correct import path
 import CandidateTable from "./CandidateTable";
-import { number } from "yup";
-import { table } from "console";
+import Candidatelists from "../../../Mock/Candidatelists";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -27,15 +26,39 @@ const Transition = React.forwardRef(function Transition(
 });
 
 const Candidatelist = () => {
-  const [currentPage, setCurrentPage] = React.useState(1);
-  const [entries, setEntries] = React.useState(10);
-  const [search,setSearch]=React.useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [entries, setEntries] = useState(10);
+  const [searchText, setSearchText] = useState("");
+  const [data, setData] = useState(Candidatelists);
 
+  const handleChange = (e: any) => {
+    const value = e.target.value;
+    setSearchText(value);
+    filterData(value);
+  };
+
+  const filterData = (value: any) => {
+    const lowercasedValue = value.trim();
+    if (lowercasedValue === "") {
+      setData(Candidatelists);
+    } else {
+      const filteredData = Candidatelists.filter((item) => {
+        // Use '===' for equality comparison, and return the item or null if it doesn't match
+        // console.log(item)
+        return item.jobtitle.startsWith(lowercasedValue) ||
+          item.jobtitle == lowercasedValue
+          ? item
+          : null;
+      });
+      console.log(lowercasedValue);
+      console.log();
+      setData(filteredData); // Remove null values
+    }
+  };
 
   return (
     <div className="">
-      {/* title,add candidate button */}
-
+      {/* title, add candidate button */}
       <div className="w-full flex flex-col mb-[15px] items-center md:flex-row md:justify-between">
         <div className="text-[#029e9d] text-sm">
           <a href="#" className="anchor-tag">
@@ -59,26 +82,20 @@ const Candidatelist = () => {
       </div>
 
       {/* input fields */}
-
-      <div className="shadows  p-[24px] mb-4  xl:flex lg:items-center  bg-white">
-        
-
-        <div className="flex flex-col  gap-y-7 mt-3 md:flex-row justify-evenly gap-x-6 lg:mt-0 w-full ">
+      <div className="shadows p-[24px] mb-4 xl:flex lg:items-center bg-white">
+        <div className="flex flex-col gap-y-7 mt-3 md:flex-row justify-evenly gap-x-6 lg:mt-0 w-full">
           <input
             type="text"
-            placeholder="Search by catogory title"
-            className="border-[1px] w-[full] border-gray-200  rounded-lg outline-none px-[12px] h-12 md:w-[80%]  "
-            value={search}
-            onChange={(e)=>setSearch(e.target.value)}
-            
-            
+            placeholder="Search by category title"
+            className="border-[1px] w-[full] border-gray-200 rounded-lg outline-none px-[12px] h-12 md:w-[80%]"
+            value={searchText}
+            onChange={handleChange}
           />
-
-          <div className="border-[1px] w-full  border-gray-200 rounded-lg px-[10px] h-12 md:w-[20%]">
+          <div className="border-[1px] w-full border-gray-200 rounded-lg px-[10px] h-12 md:w-[20%]">
             <select
-              name="catogory"
-              id="catogory"
-              className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
+              name="category"
+              id="category"
+              className="outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
               value={entries}
               onChange={(e) => setEntries(parseInt(e.target.value))}
             >
@@ -98,15 +115,19 @@ const Candidatelist = () => {
       </div>
 
       {/* candidate table */}
-      <div className=" shadows max-h-[496px] overflow-scroll overflow-x-scroll p-[24px] pt-0 bg-white mb-[15px]">
-        <CandidateTable entries={entries} currentPage={currentPage} />
+      <div className="hide-scroll shadows max-h-[496px] overflow-scroll overflow-x-scroll p-[24px] pt-0 bg-white mb-[15px]">
+        <CandidateTable
+          entries={entries}
+          currentPage={currentPage}
+          datas={data}
+        />
       </div>
 
-      {/* pagenation */}
+      {/* pagination */}
       <div className="w-full">
-        <div className="my-8 flex  justify-center lg:justify-start  flex-row ">
+        <div className="my-8 flex justify-center lg:justify-start flex-row">
           <button
-            className="bg-white text-[hsl(180,82%,35%)] hover:text-white  hover:bg-[hsl(180,82%,35%)] py-2  px-3 rounded-lg mr-1 border-[1px] border-gray-200  "
+            className="bg-white text-[hsl(180,82%,35%)] hover:text-white hover:bg-[hsl(180,82%,35%)] py-2 px-3 rounded-lg mr-1 border-[1px] border-gray-200"
             onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
           >
             Previous
@@ -146,7 +167,7 @@ const Candidatelist = () => {
           </button>
 
           <button
-            className="bg-white text-[hsl(180,82%,35%)] hover:bg-[hsl(180,82%,35%)] hover:text-white py-2  border-[1px] border-gray-200 px-3 rounded-lg mr-1 "
+            className="bg-white text-[hsl(180,82%,35%)] hover:bg-[hsl(180,82%,35%)] hover:text-white py-2 border-[1px] border-gray-200 px-3 rounded-lg mr-1"
             onClick={() => setCurrentPage(currentPage + 1)}
           >
             Next

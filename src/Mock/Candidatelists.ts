@@ -15,7 +15,7 @@
           coverletter: 'Cover letter text here',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 2,
@@ -31,7 +31,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 3,
@@ -47,7 +47,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 4,
@@ -63,7 +63,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 5,
@@ -79,7 +79,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 6,
@@ -95,7 +95,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 7,
@@ -111,7 +111,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 8,
@@ -127,7 +127,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 9,
@@ -143,7 +143,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 10,
@@ -159,7 +159,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 11,
@@ -175,7 +175,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 12,
@@ -191,7 +191,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 13,
@@ -207,7 +207,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 14,
@@ -223,7 +223,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 15,
@@ -239,7 +239,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 16,
@@ -255,7 +255,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 17,
@@ -271,7 +271,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 18,
@@ -287,7 +287,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 19,
@@ -303,7 +303,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 20,
@@ -319,7 +319,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 21,
@@ -335,7 +335,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 22,
@@ -351,7 +351,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         {
           id: 23,
@@ -367,7 +367,7 @@
           coverletter: 'Another cover letter text',
           cv: 'CV file path here',
           otherfiles: 'Other files path here',
-          img: 'Image file path here'
+          img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
         },
         
        

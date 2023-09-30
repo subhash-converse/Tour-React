@@ -3,14 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
 import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
-import Candidatelists from "../../../Mock/Candidatelists";
-import user from "../../../assets/images/1.jpg"
+
 
 
 interface table{
   entries:number,
   currentPage:number,
-  
+  datas:any
 }
 
 const CandidateTable = (props:table) => {
@@ -35,10 +34,10 @@ const CandidateTable = (props:table) => {
           <th>ACTION</th>
         </tr>
 
-        {Candidatelists.slice((props.currentPage - 1) * props.entries, props.currentPage * props.entries).map((candidate) => (
-          <tr className="">
+        {props.datas.slice((props.currentPage - 1) * props.entries, props.currentPage * props.entries).map((candidate:any,i:number) => (
+          <tr className="" key={i}>
             <td>{candidate.id}</td>
-            <td ><img className='rounded-md h-[32px] w-[35px]' src={user} alt="user img" /></td>
+            <td ><img className='rounded-md h-[32px] w-[35px]' src={candidate.img} alt="user img" /></td>
             <td>{candidate.dob}</td>
             <td>{candidate.address}</td>
             <td><a href={candidate.linkedinurl} target="_blank"><FontAwesomeIcon icon={faLink} className="tb-icon"/></a></td>
