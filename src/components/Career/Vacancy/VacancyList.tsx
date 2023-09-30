@@ -50,7 +50,7 @@ const Vacancylist = () => {
   const filterDepartment = (value: any) => {
     const Department = value.trim();
     if (Department == "") {
-      setDepartmentData(Vacancylists);
+      setData(Vacancylists);
     } else {
       let filteredDepart = Vacancylists.filter((item) => {
         // console.log(item.department);
@@ -60,7 +60,7 @@ const Vacancylist = () => {
           : null;
       });
 
-      setDepartmentData(filteredDepart); // Remove null values
+      setData(filteredDepart); // Remove null values
     }
   };
 
@@ -96,7 +96,7 @@ const Vacancylist = () => {
   const filterLocation = (value: any) => {
     const Location = value.trim();
     if (Location == "") {
-      setLocationData(Vacancylists);
+      setData(Vacancylists);
     } else {
       let filteredLocation = Vacancylists.filter((item) => {
         // console.log(item.department);
@@ -105,7 +105,7 @@ const Vacancylist = () => {
           : null;
       });
 
-      setLocationData(filteredLocation); // Remove null values
+      setData(filteredLocation); // Remove null values
     }
   };
 // console.log(Vacancylists.length)
@@ -143,7 +143,7 @@ const Vacancylist = () => {
         <div className="flex flex-col  gap-y-7 mt-3 xl:flex-row md:justify-between gap-x-7 lg:mt-0 w-full">
           <input
             type="text"
-            placeholder="Search by job Vacancy"
+            placeholder="Search by job Openings"
             className="border-[1px] w-[full] border-gray-200  rounded-lg outline-none px-[10px] h-12 md xl:w-[60%]"
             value={searchText}
             onChange={handleChange}
@@ -223,8 +223,8 @@ const Vacancylist = () => {
           entries={entries}
           currentPage={currentPage}
           datas={data}
-          department={DepartmentData}
-          location={locationData}
+          // department={DepartmentData}
+          // location={locationData}
         />
       </div>
 

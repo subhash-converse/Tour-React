@@ -1,4 +1,4 @@
-import { faDeleteLeft, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
 import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
@@ -12,81 +12,76 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
 
-interface table {
+interface VacancyTableProps {
   entries: number;
   currentPage: number;
-  datas: any;
-  department: any;
-  location: any;
+  datas: any[];
 }
 
 function PaperComponent(props: PaperProps) {
   return (
-    <Draggable
-      handle="#draggable-dialog-title"
-      cancel={'[class*="MuiDialogContent-root"]'}
-    >
+    <Draggable handle="#draggable-dialog-title" cancel={'[class*="MuiDialogContent-root"]'}>
       <Paper {...props} />
     </Draggable>
   );
 }
 
-const Vacancytable = (props: table) => {
-  const [mainDuties, setMainDuties] = React.useState(false);
+const VacancyTable: React.FC<VacancyTableProps> = (props) => {
+  const [mainDuties, setMainDuties] = React.useState<number | null>(null);
+  const [mainDutiesValue,setmainDutiesValue] = React.useState("")
   const [experience, setExperience] = React.useState(false);
-  const [deleteiRow, setDeleteRow] = React.useState(false);
+  const [experienceValue,setexperienceValue] = React.useState("")
+  const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
 
-  const MainDutiesClickOpen = (row: number) => {
-    setMainDuties(true);
-    let MaindutieDialog = row;
+  const mainDutiesClickOpen = (row: number,val:any) => {
+    setMainDuties(row);
+    setmainDutiesValue(val)
   };
 
-  const MainDutiesClickClose = () => {
-    setMainDuties(false);
+  const mainDutiesClickClose = () => {
+    setMainDuties(null);
   };
 
-  const ExperienceClickOpen = () => {
+  const experienceClickOpen = (val:any) => {
     setExperience(true);
+    setexperienceValue(val);
   };
 
-  const ExperienceClickClose = () => {
+  const experienceClickClose = () => {
     setExperience(false);
   };
 
-  const DeleteClickOpen = () => {
-    setDeleteRow(true);
+  const deleteClickOpen = (row: number) => {
+    setDeleteRow(row);
   };
 
-  const DeleteClickClose = () => {
-    setDeleteRow(false);
+  const deleteClickClose = () => {
+    setDeleteRow(null);
   };
 
-  const DeleteConfirm = (e: any) => {
-    console.log(e);
+  const deleteConfirm = (row: number) => {
+    console.log(`Deleting row with ID: ${row}`);
+    deleteClickClose();
   };
 
   return (
     <div className="">
       <table className="w-full">
-        <tr className=" bg-white sticky top-0">
-          <th className=""> ID</th>
-          <th>OPENINGS</th>
-          <th>DEPARTMENT</th>
-          <th>PUBLISH DATE</th>
-          <th>LOCATION</th>
-          <th>MAIN DUTIES</th>
-          <th>EXPERIENCE</th>
-          <th>ACTION</th>
-        </tr>
-
-        {
-          // props.datas
-          props.department
-            // props.location
-            .slice(
-              (props.currentPage - 1) * props.entries,
-              props.currentPage * props.entries
-            )
+        <thead>
+          <tr className=" bg-white sticky top-0">
+            <th>ID</th>
+            <th>OPENINGS</th>
+            <th>DEPARTMENT</th>
+            <th>PUBLISH DATE</th>
+            <th>LOCATION</th>
+            <th>MAIN DUTIES</th>
+            <th>EXPERIENCE</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.datas
+            .slice((props.currentPage - 1) * props.entries, props.currentPage * props.entries)
             .map((Vacancy: any) => (
               <tr key={Vacancy.id}>
                 <td>{Vacancy.id}</td>
@@ -99,118 +94,116 @@ const Vacancytable = (props: table) => {
                     <FileOpenOutlinedIcon
                       className=" tb-icon action-buttons"
                       onClick={() => {
-                        MainDutiesClickOpen(Vacancy.id);
+                        mainDutiesClickOpen(Vacancy.id,Vacancy.mainDuties);
                       }}
                     />
-
-                    <Dialog
-                      open={mainDuties}
-                      onClose={MainDutiesClickClose}
-                      PaperComponent={PaperComponent}
-                      aria-labelledby="draggable-dialog-title"
-                    >
-                      <DialogTitle
-                        style={{ cursor: "move" }}
-                        id="draggable-dialog-title"
-                      >
-                        Main Duties
-                      </DialogTitle>
-                      <DialogContent>
-                        <DialogContentText>
-                          To subscribe to this website, please enter your email
-                          address here. We will send updates occasionally.
-                        </DialogContentText>
-                      </DialogContent>
-                      <DialogActions>
-                        <Button autoFocus onClick={MainDutiesClickClose}>
-                          Cancel
-                        </Button>
-                      </DialogActions>
-                    </Dialog>
-
-                    <span className=" tb-icon">
-                      {/* {Vacancy.mainDuties} */}
-                    </span>
                   </div>
                 </td>
                 <td>
                   <div className=" tb-icon">
                     <FileOpenOutlinedIcon
                       className=" tb-icon action-buttons"
-                      onClick={ExperienceClickOpen}
+                      onClick={()=>{experienceClickOpen(Vacancy.experience)}}
                     />
-                    <Dialog
-                      open={experience}
-                      onClose={ExperienceClickClose}
-                      PaperComponent={PaperComponent}
-                      aria-labelledby="draggable-dialog-title"
-                    >
-                      <DialogTitle
-                        style={{ cursor: "move" }}
-                        id="draggable-dialog-title"
-                      >
-                        Experience
-                      </DialogTitle>
-                      <DialogContent>
-                        <DialogContentText>
-                          To subscribe to this website, please enter your email
-                          address here. We will send updates occasionally.
-                        </DialogContentText>
-                      </DialogContent>
-                      <DialogActions>
-                        <Button autoFocus onClick={ExperienceClickClose}>
-                          Cancel
-                        </Button>
-                      </DialogActions>
-                    </Dialog>
                   </div>
                 </td>
                 <td>
-                  <span className="action-buttons">
-                    <FontAwesomeIcon icon={faPenToSquare} className="tb-icon" />
+                  <div className="action-buttons">
+                    <a href="/Addvacancy"><FontAwesomeIcon icon={faPenToSquare} className="tb-icon" /></a>
                     <BackspaceOutlinedIcon
                       className="tb-icon"
-                      onClick={DeleteClickOpen}
+                      onClick={() => {
+                        deleteClickOpen(Vacancy.id);
+                      }}
                     />
-                    <Dialog
-                      open={deleteiRow}
-                      onClose={DeleteClickClose}
-                      PaperComponent={PaperComponent}
-                      aria-labelledby="draggable-dialog-title"
-                    >
-                      <DialogTitle
-                        style={{ cursor: "move" }}
-                        id="draggable-dialog-title"
-                      >
-                        Delete
-                      </DialogTitle>
-                      <DialogContent>
-                        <DialogContentText>
-                          Do you want delete this row ?
-                        </DialogContentText>
-                      </DialogContent>
-                      <DialogActions>
-                        <Button
-                          autoFocus
-                          onClick={() => {
-                            DeleteConfirm(console.log());
-                          }}
-                        >
-                          confirm
-                        </Button>
-                        <Button autoFocus onClick={DeleteClickClose}>
-                          Cancel
-                        </Button>
-                      </DialogActions>
-                    </Dialog>
-                  </span>
+                  </div>
                 </td>
               </tr>
-            ))
-        }
+            ))}
+        </tbody>
       </table>
+
+      {/* Main Duties Dialog */}
+      <Dialog
+        open={mainDuties !== null}
+        onClose={mainDutiesClickClose}
+        PaperComponent={(props) => (
+          <PaperComponent
+            {...props}
+            style={{ width: '400px', height: '300px' }} // Adjust the width and height as needed
+          />
+        )}
+        
+        aria-labelledby="draggable-dialog-title"
+      >
+        <DialogTitle style={{ cursor: "move" }} id="draggable-dialog-title">
+          Main Duties
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {mainDutiesValue}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button  onClick={mainDutiesClickClose}>
+            Cancel
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      {/* Experience Dialog */}
+      <Dialog
+        open={experience}
+        onClose={experienceClickClose}
+        PaperComponent={(props) => (
+          <PaperComponent
+            {...props}
+            style={{ width: '400px', height: '300px' }} // Adjust the width and height as needed
+          />
+        )}
+        aria-labelledby="draggable-dialog-title"
+      >
+        <DialogTitle style={{ cursor: "move" }} id="draggable-dialog-title">
+          Experience
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {experienceValue}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button  onClick={experienceClickClose}>
+            Cancel
+          </Button>
+        </DialogActions>
+      </Dialog>
+
+      {/* Delete Dialog */}
+      <Dialog
+        open={deleteRow !== null}
+        onClose={deleteClickClose}
+        PaperComponent={PaperComponent}
+        aria-labelledby="draggable-dialog-title"
+      >
+        <DialogTitle style={{ cursor: "move" }} id="draggable-dialog-title">
+          Delete
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Do you want to delete this row?
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button  onClick={() => deleteConfirm(deleteRow!)}>
+            Confirm
+          </Button>
+          <Button  onClick={deleteClickClose}>
+            Cancel
+          </Button>
+        </DialogActions>
+      </Dialog>
     </div>
   );
 };
 
-export default Vacancytable;
+export default VacancyTable;
