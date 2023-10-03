@@ -11,11 +11,12 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
+import Candidatelists from "../../../Mock/Candidatelists";
+// import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 
 interface table {
   entries: number;
-  currentPage: number;
-  datas: any[];
+  datas: any;
 }
 
 function PaperComponent(props: PaperProps) {
@@ -27,6 +28,12 @@ function PaperComponent(props: PaperProps) {
 }
 
 const CandidateTable: React.FC<table> = (props) => {
+
+  // const docs = [
+  //   { uri: require("../../../assets/flies/file_example_XLS_10.xls") },
+  //   { uri: require("../../../assets/flies/file-sample_100kB.doc") }
+  // ];
+
   const [coverLetter, setCoverLetter] = React.useState<number | null>(null);
   const [coverLetterValue, setCoverLetterValue] = React.useState("");
 
@@ -36,8 +43,11 @@ const CandidateTable: React.FC<table> = (props) => {
   const [otherFiles, setOtherFiles] = React.useState<boolean>(false);
   const [otherFilesValue, setOtherFilesValue] = React.useState("");
 
-  const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
+  const [edit, setEdit] = React.useState<boolean>(false);
+  // const [otherFilesValue, setOtherFilesValue] = React.useState("");
 
+  const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
+// cover Letter
   const coverLetterClickOpen = (row: number, val: string) => {
     setCoverLetter(row);
     setCoverLetterValue(val);
@@ -46,7 +56,7 @@ const CandidateTable: React.FC<table> = (props) => {
   const coverLetterClickClose = () => {
     setCoverLetter(null);
   };
-
+// cv
   const cvClickOpen = (val: string) => {
     setCv(true);
     setCvValue(val);
@@ -55,7 +65,7 @@ const CandidateTable: React.FC<table> = (props) => {
   const cvClickClose = () => {
     setCv(false);
   };
-
+// other files
   const otherFilesClickOpen = (val: string) => {
     setOtherFiles(true);
     setOtherFilesValue(val);
@@ -64,7 +74,22 @@ const CandidateTable: React.FC<table> = (props) => {
   const otherFilesClickClose = () => {
     setOtherFiles(false);
   };
+// edit
+  const editClickOpen = (row: number) => {
+    setEdit(true);
+  };
 
+  const editClickClose = () => {
+    setEdit(false);
+  };
+
+  const editConfirm = (row: any) => {
+    console.log(`Upadte this row with ID: ${row}`);
+    editClickClose();
+  };
+
+
+// delete
   const deleteClickOpen = (row: number) => {
     setDeleteRow(row);
   };
@@ -74,10 +99,28 @@ const CandidateTable: React.FC<table> = (props) => {
   };
 
   const deleteConfirm = (row: number) => {
+    if(row == null){
+       
+    }
+    
+    else {
     console.log(`Deleting row with ID: ${row}`);
+let obj = (props.datas).map((singleObj:any)=>singleObj.id)
+let len = obj.length;
+for(let i = 0;i < len;i++){
+  let dataId = obj[i];
+  
+  if(dataId == row){
+    console.log(dataId)
+   let candidateData = (props.datas).splice(i,1) 
+   console.log(candidateData)
+  
+  }
+}
     deleteClickClose();
-  };
+  }};
 
+ 
   return (
     <div>
       <table className="w-full">
@@ -87,7 +130,7 @@ const CandidateTable: React.FC<table> = (props) => {
             <th>IMG</th>
             <th>DOB</th>
             <th>ADDRESS</th>
-            <th>LINKED IN URL</th>
+            <th>LINKEDIN URL</th>
             <th>MARITAL STATUS</th>
             <th>CURRENT JOB</th>
             <th>CURRENT COMPANY</th>
@@ -101,19 +144,17 @@ const CandidateTable: React.FC<table> = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.datas
-            .slice((props.currentPage - 1) * props.entries, props.currentPage * props.entries)
-            .map((candidate: any, i: number) => (
-              <tr className="" key={i}>
+          {props.datas.map((candidate: any) => (
+              <tr >
                 <td>{candidate.id}</td>
                 <td>
                   <img
-                    className="rounded-md h-[32px] w-[35px]"
+                    className="rounded-md h-[40px] w-[38px]"
                     src={candidate.img}
                     alt="user img"
                   />
                 </td>
-                <td>{candidate.dob}</td>
+                <td className="whitespace-nowrap">{candidate.dob}</td>
                 <td>{candidate.address}</td>
                 <td>
                   <a href={candidate.linkedinurl} target="_blank">
@@ -158,13 +199,17 @@ const CandidateTable: React.FC<table> = (props) => {
                 </td>
                 <td>
                   <span className="action-buttons">
-                    <a href="/addpackage"><FontAwesomeIcon icon={faPenToSquare} className="tb-icon" /></a>
+                    <FontAwesomeIcon icon={faPenToSquare} className="tb-icon" onClick={() => {
+                        editClickOpen(candidate.id);
+                      }}/>
+
                     
                     <BackspaceOutlinedIcon
                       className="tb-icon"
                       onClick={() => {
                         deleteClickOpen(candidate.id);
                       }}
+
                     />
                   </span>
                 </td>
@@ -180,14 +225,15 @@ const CandidateTable: React.FC<table> = (props) => {
         PaperComponent={(props) => (
           <PaperComponent
             {...props}
-            style={{ width: '400px', height: '300px' }} // Adjust the width and height as needed
+            style={{ width: '500px', height: '400px' }} // Adjust the width and height as needed
           />
         )}
         aria-labelledby="draggable-dialog-title"
       >
-        <img src="" alt="" />
+
         <DialogContent>
-          <DialogContentText>{coverLetterValue}</DialogContentText>
+        {/* <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} /> */}
+    
         </DialogContent>
         <DialogActions>
           <Button onClick={coverLetterClickClose}>Cancel</Button>
@@ -201,7 +247,7 @@ const CandidateTable: React.FC<table> = (props) => {
         PaperComponent={(props) => (
           <PaperComponent
             {...props}
-            style={{ width: "400px", height: "300px" }}
+            style={{ width: "500px", height: "400px" }}
           />
         )}
         aria-labelledby="draggable-dialog-title"
@@ -210,7 +256,7 @@ const CandidateTable: React.FC<table> = (props) => {
           CV
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>{cvValue}</DialogContentText>
+        {/* <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} /> */}
         </DialogContent>
         <DialogActions>
           <Button onClick={cvClickClose}>Cancel</Button>
@@ -224,7 +270,7 @@ const CandidateTable: React.FC<table> = (props) => {
         PaperComponent={(props) => (
           <PaperComponent
             {...props}
-            style={{ width: '400px', height: '300px' }} // Adjust the width and height as needed
+            style={{ width: '500px', height: '400px' }} // Adjust the width and height as needed
           />
         )}
         aria-labelledby="draggable-dialog-title"
@@ -233,9 +279,7 @@ const CandidateTable: React.FC<table> = (props) => {
         otherFiles
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            {otherFilesValue}
-          </DialogContentText>
+        {/* <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} /> */}
         </DialogContent>
         <DialogActions>
           <Button  onClick={otherFilesClickClose}>
@@ -243,6 +287,36 @@ const CandidateTable: React.FC<table> = (props) => {
           </Button>
         </DialogActions>
       </Dialog>
+      {/* edit Dialog */}
+      <Dialog
+        open={edit}
+        onClose={editClickClose}
+        PaperComponent={(props) => (
+          <PaperComponent
+            {...props}
+            style={{ width: '500px', height: '400px' }} // Adjust the width and height as needed
+          />
+        )}
+        aria-labelledby="draggable-dialog-title"
+      >
+        <DialogTitle style={{ cursor: "move", font:'10 px' }} id="draggable-dialog-title">
+        update
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            {"updete"}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+        <Button  onClick={editClickClose}>
+            Update
+          </Button>
+          <Button  onClick={editClickClose}>
+            Cancel
+          </Button>
+        </DialogActions>
+      </Dialog>
+
       {/* delete Dialog */}
       <Dialog
         open={deleteRow !== null}

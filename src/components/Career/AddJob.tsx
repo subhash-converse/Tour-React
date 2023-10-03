@@ -9,19 +9,17 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 // import { Editor } from "react-draft-wysiwyg";
 // import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import React, { Component, useState, useEffect } from "react";
-import ReactDOM from "react-dom";
+import  {  useState } from "react";
 import { Editor } from "react-draft-wysiwyg";
-import draftToHtml from "draftjs-to-html";
 import {
   EditorState,
-  ContentState,
-  convertToRaw,
-  Modifier,
-  getDefaultKeyBinding,
+ 
 } from "draft-js";
-
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+
+// interface update{
+//   update:any;
+// }
 
 const Addjobvacancy = () => {
   const validationSchema = Yup.object().shape({
@@ -57,10 +55,14 @@ const Addjobvacancy = () => {
       {/* Button */}
       <div className="w-full flex flex-col mb-[15px] items-center md:flex-row md:justify-between">
         <div className="text-[#029e9d] text-sm">
-          <a href="#" className="anchor-tag">
+          <Link 
+          to="#" className="anchor-tag">
             Dashboard
-          </a>{" "}
-          / <span className="text-[#7987a1]">Add A Vacancy</span>
+          </Link>
+          {" "}
+          / 
+          {" "}
+          <span className="text-[#7987a1]">Add A Vacancy</span>
         </div>
 
         <div className="">

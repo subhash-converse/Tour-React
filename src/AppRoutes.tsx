@@ -11,6 +11,7 @@ const AppRoutes: React.FC = () => {
   return (
     <Router>
       <Routes>
+        {/* package management */}
       <Route
           path="/allpackagelist"
           element={<Sidenavbar><AllPackageList /></Sidenavbar>}
@@ -19,6 +20,8 @@ const AppRoutes: React.FC = () => {
           path="/addpackage"
           element={<Sidenavbar><AddPackage /></Sidenavbar>}
         />
+        
+        {/* Candidate ;ist */}
         <Route
           path="/"
           element={<Sidenavbar><Candidatelist /></Sidenavbar>}

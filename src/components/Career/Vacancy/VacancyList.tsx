@@ -8,8 +8,8 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Vacancylists from "../../../Mock/Vacancylists";
 import { useState } from "react";
 import Typography from "@mui/material/Typography";
-import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import Pagination from "rc-pagination";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -30,15 +30,9 @@ const Vacancylist = () => {
   const [searchLocation, setsearchLocation] = useState("");
   const [locationData, setLocationData] = useState(Vacancylists);
   const [page, setPage] = React.useState(1);
-
-  const pageNation = (event: React.ChangeEvent<unknown>, value: number) => {
-    setPage(value);
-    console.log(Math.ceil(Vacancylists.length / 10) * 10);
-    console.log(page)
-
-    
-  };
-
+  const [perPage, setPerPage] = useState(10);
+  const [size, setSize] = useState(perPage);
+  const [current, setCurrent] = useState(1);
 
   const handleDepartment = (e: any) => {
     const value = e.target.value;
@@ -72,13 +66,14 @@ const Vacancylist = () => {
   };
 
   const filterData = (value: any) => {
-    const lowercasedValue = value.trim();
+    const lowercasedValue = value.trim().toLowerCase();
     if (lowercasedValue === "") {
       setData(Vacancylists);
     } else {
       const filteredData = Vacancylists.filter((item) => {
-        return item.openings.startsWith(lowercasedValue) ||
-          item.openings == lowercasedValue
+        let loweritem = item.openings.toLowerCase();
+        return loweritem.startsWith(lowercasedValue) ||
+          loweritem == lowercasedValue
           ? item
           : null;
       });
@@ -96,9 +91,9 @@ const Vacancylist = () => {
   const filterLocation = (value: any) => {
     const Location = value.trim();
     if (Location == "") {
-      setData(Vacancylists);
+      setData(data);
     } else {
-      let filteredLocation = Vacancylists.filter((item) => {
+      let filteredLocation = data.filter((item) => {
         // console.log(item.department);
         return item.location.startsWith(Location) || item.location == Location
           ? item
@@ -108,21 +103,57 @@ const Vacancylist = () => {
       setData(filteredLocation); // Remove null values
     }
   };
-// console.log(Vacancylists.length)
+  // console.log(Vacancylists.length)
+  const PerPageChange = (value: any) => {
+    setSize(value);
+    const newPerPage = Math.ceil(data.length / value);
+    if (current > newPerPage) {
+      setCurrent(newPerPage);
+    }
+  };
+
+  const getData = (current: any, pageSize: any) => {
+    // Normally you should get the data from the server
+    return data.slice((current - 1) * pageSize, current * pageSize);
+  };
+
+  const PaginationChange = (page: any, pageSize: any) => {
+    setCurrent(page);
+    setSize(pageSize);
+  };
+
+  const PrevNextArrow = (current: any, type: any, originalElement: any) => {
+    if (type === "prev") {
+      return (
+        <button>
+          <i className="fa fa-angle-double-left"></i>
+        </button>
+      );
+    }
+    if (type === "next") {
+      return (
+        <button>
+          <i className="fa fa-angle-double-right"></i>
+        </button>
+      );
+    }
+    return originalElement;
+  };
+
   return (
     <div className="">
       {/* title,add candidate button */}
 
       <div className="w-full flex flex-col mb-[15px] items-center md:flex-row md:justify-between">
         <div className="text-[#029e9d] text-sm">
-          <a href="#" className="anchor-tag">
+          <Link to="#" className="anchor-tag">
             Dashboard
-          </a>{" "}
-          / <a href="/">Candidate</a> /{" "}
-          <a href="Vacancylist" className="text-[#7987a1]">
+          </Link>{" "}
+          / <Link to="/">Candidate</Link> /{" "}
+          <Link to="Vacancylist" className="text-[#7987a1]">
             {" "}
-            Vacancy List
-          </a>
+            / Vacancy List
+          </Link>
         </div>
 
         <div className="">
@@ -157,9 +188,6 @@ const Vacancylist = () => {
                 value={searchDepartment}
                 onChange={handleDepartment}
               >
-                <option value="" id="searchval">
-                  Department
-                </option>
                 <option value="it" className="drop-option">
                   it
                 </option>
@@ -180,7 +208,6 @@ const Vacancylist = () => {
                 value={searchLocation}
                 onChange={handleLocation}
               >
-                <option value="">Location</option>
                 <option value="gobi" className="drop-option">
                   gobi
                 </option>
@@ -198,10 +225,9 @@ const Vacancylist = () => {
                 name="catogory"
                 id="catogory"
                 className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
-                value={entries}
-                onChange={(e) => setEntries(parseInt(e.target.value))}
+                value={size}
+                onChange={(e) => setSize(parseInt(e.target.value))}
               >
-                <option value="Show Entries">Show Entries</option>
                 <option value="10" className="drop-option">
                   10
                 </option>
@@ -218,70 +244,25 @@ const Vacancylist = () => {
       </div>
 
       {/* candidate table */}
-      <div className="hide-scroll shadows max-h-[496px] overflow-scroll xl:overflow-x-hidden p-[24px] pt-0 bg-white mb-[15px]">
+      <div className="hide-scroll shadows max-h-[496px] min-h-[496px] overflow-scroll xl:overflow-x-hidden p-[24px] pt-0 bg-white mb-[15px]">
         <Vacancytable
           entries={entries}
-          currentPage={currentPage}
-          datas={data}
-          // department={DepartmentData}
-          // location={locationData}
+          datas={getData(current, size)}
         />
       </div>
 
       {/* pagenation */}
       <div className="w-full">
-        
-        <Stack spacing={1}>
-          <Pagination count={(Math.ceil(Vacancylists.length / 10) * 10)/entries} page={page} onChange={pageNation} />
-        </Stack>
-        {/* <div className="my-8 flex  justify-center lg:justify-start  flex-row ">
-          <button
-            className="bg-white text-[hsl(180,82%,35%)] hover:text-white  hover:bg-[hsl(180,82%,35%)] py-2  px-3 rounded-lg mr-1 border-[1px] border-gray-200  "
-            onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
-          >
-            Previous
-          </button>
-
-          <button
-            className={`${
-              currentPage === 1
-                ? "active-page"
-                : "bg-white text-[hsl(180,82%,35%)]"
-            } py-2 border-[1px] border-gray-200 px-4 rounded-lg mr-1`}
-            onClick={() => setCurrentPage(1)}
-          >
-            1
-          </button>
-
-          <button
-            className={`${
-              currentPage === 2
-                ? "active-page"
-                : "bg-white text-[hsl(180,82%,35%)]"
-            } py-2 border-[1px] border-gray-200 px-4 rounded-lg mr-1`}
-            onClick={() => setCurrentPage(2)}
-          >
-            2
-          </button>
-
-          <button
-            className={`${
-              currentPage === 3
-                ? "active-page"
-                : "bg-white text-[hsl(180,82%,35%)]"
-            } py-2 border-[1px] border-gray-200 px-4 rounded-lg mr-1`}
-            onClick={() => setCurrentPage(3)}
-          >
-            3
-          </button>
-
-          <button
-            className="bg-white text-[hsl(180,82%,35%)] hover:bg-[hsl(180,82%,35%)] hover:text-white py-2  border-[1px] border-gray-200 px-3 rounded-lg mr-1 "
-            onClick={() => setCurrentPage(currentPage + 1)}
-          >
-            Next
-          </button>
-        </div> */}
+        <Pagination
+          className="pagination-data"
+          onChange={PaginationChange}
+          total={data.length}
+          current={current}
+          pageSize={size}
+          showSizeChanger={false}
+          itemRender={PrevNextArrow}
+          onShowSizeChange={PerPageChange}
+        />
       </div>
     </div>
   );

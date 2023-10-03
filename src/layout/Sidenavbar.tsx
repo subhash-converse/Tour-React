@@ -14,7 +14,8 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import img from "../assets/images/1.jpg";
-import logo from "../assets/images/logo.png"; 
+import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom"; 
 
 interface CommonLayoutProps {
   children: ReactNode;
@@ -28,6 +29,7 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
   const [careerListVisible, setCareerListVisible] = useState(false);
   const [careerButtonColor, setCareerButtonColor] = useState("#717171");
   const [navVisible, setNavVisible] = useState(true);
+  const [hoverNavVisible, setHoverNavVisible] = useState(false);
 
   const packageToggle = () => {
     setPackageVisible(!packageVisible);
@@ -56,14 +58,30 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
     return <div className="notification-circle"></div>;
   };
 
+  function hovermenu(){
+    console.log("hello")
+    setHoverNavVisible(!hoverNavVisible)
+  }
+  console.log(hoverNavVisible)
+  console.log(navVisible)
+
+// const myNavbar = document.getElementsByClassName('mqin')
+// console.log(myNavbar)
+// if(myNavbar){
+//   console.log(myNavbar)
+//   myNavbar.addEventListener("click",clickme())
+
+// }
+
+
   return (
-    <div className="h-screen ">
+    <div className="h-screen" id="mqin" >
       {/* logo,search */}
       <div className="w-full sticky top-0 flex border-b-[1px] border-gray-100 h-[60px] ">
         {/* logo */}
         {navVisible ? (
           <div className="menu-bar  bg-white  border-r-[1px] border-gray-200 pt-1 flex items-center min-w-[245px] px-[25px] ">
-            <a href="" className="w-full">
+            <a href="#" className="w-full">
               <img
                 src={logo}
                 alt="logo"
@@ -78,7 +96,7 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
           </div>
         ) : (
           <div>
-            <div className="menu-bar  min-w-[70px] z-[1] border-r-[1px] bg-white border-gray-200 p-5 flex items-center justify-center">
+            <div className="menu-bar  min-w-[70px] z-[1] border-r-[1px] bg-white border-gray-200 p-[20px] flex items-center justify-center">
               <FontAwesomeIcon
                 icon={faBars}
                 className="text-[rgb(121,135,161)] text-lg "
@@ -106,7 +124,7 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
             <div className="w-[30px] ">
               <NotificationsNoneIcon className="text-[#232323]" /> <Blink />
             </div>
-            <div className="w-[30px] mx-[5px]">
+            <div  className="w-[30px] mx-[5px]">
               <Avatar
                 alt="Remy Sharp"
                 src={img}
@@ -119,8 +137,8 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
 
       {/* sidebar,contents */}
       <div className="flex">
-        {navVisible ? (
-          <div className="menu-bar  fixed pt-[25px] pb-[50px] z-10 bg-white flex flex-col h-[92vh] border-r-[1px] border-gray-200 lg:relative lg:inline-block min-w-[245px]  ">
+        {hoverNavVisible||navVisible ? (
+          <div id="hover-mouseOut" onMouseLeave={hovermenu} className="hover-menu fixed pt-[25px] pb-[50px] z-10 bg-white flex flex-col h-[93vh] border-r-[1px] border-gray-200 lg:relative lg:inline-block min-w-[245px]">
             {/* pack management */}
             <div className=" px-[25px] border-b-[1px] border-dashed border-gray-100">
               <button
@@ -151,10 +169,10 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
               {packageVisible && (
                 <ul className="list-type">
                   <li className="nav-list">
-                    <a href="/allpackagelist"> All Package List</a>
+                  <Link to="/allpackagelist"> All Package List</Link>
                   </li>
                   <li className="nav-list">
-                    <a href="/addpackage">Add Package</a>
+                    <Link to="/addpackage">Add Package</Link>
                   </li>
                 </ul>
               )}
@@ -226,20 +244,20 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
               {careerListVisible && (
                 <ul className="list-type">
                   <li className="nav-list">
-                    <a href="/"> All Candidate List</a>
+                    <Link to="/"> All Candidate List</Link>
                   </li>
                   <li className="nav-list">
-                    <a href=" /vacancylist"> All Job vacancies</a>
+                    <Link to="/vacancylist"> All Job vacancies</Link>
                   </li>
                   <li className="nav-list">
-                    <a href="/addvacancy">Add Job Vacancy</a>
+                    <Link to="/addvacancy">Add Job Vacancy</Link>
                   </li>
                 </ul>
               )}
             </div>
           </div>
         ) : (
-          <div className="menu-bar  fixed pt-[25px] pb-[50px] z-10 bg-white flex flex-col h-[92vh] border-r-[1px] border-gray-200 lg:relative lg:inline-block min-w-[70px]  ">
+          <div id="hover-mouseOver" onMouseEnter={hovermenu} className="menu-bar  fixed pt-[25px] pb-[50px] z-10 bg-white flex flex-col h-[92vh] border-r-[1px] border-gray-200 lg:relative lg:inline-block min-w-[70px]  ">
             {/* pack management */}
             <div className=" px-[25px] border-b-[1px] border-dashed border-gray-100">
               <button
@@ -296,7 +314,6 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
         {/* table or form content */}
         <div className="table-con shadow-inner flex flex-col bg-[#F9FAFB] shadow-gray-200 overflow-scroll w-full lg:h-[93vh]  md:justify-between ">
           <div className="p-[25px]">
-            {" "}
             <main>{children}</main>
           </div>
 

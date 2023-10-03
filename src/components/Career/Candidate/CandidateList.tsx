@@ -5,16 +5,12 @@ import {
   faFileExport,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import Button from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions"; // Correct import path
 import CandidateTable from "./CandidateTable";
 import Candidatelists from "../../../Mock/Candidatelists";
+import Pagination from 'rc-pagination';
+import { Link } from "react-router-dom";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -26,10 +22,39 @@ const Transition = React.forwardRef(function Transition(
 });
 
 const Candidatelist = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [entries, setEntries] = useState(10);
+
   const [searchText, setSearchText] = useState("");
   const [data, setData] = useState(Candidatelists);
+  const [perPage, setPerPage] = useState(10);
+  const [size, setSize] = useState(10);
+  const [current, setCurrent] = useState(1);
+  const PerPageChange = (value: any) => {
+    setSize(value);
+    const newPerPage = Math.ceil(data.length / value);
+    if (current > newPerPage) {
+      setCurrent(newPerPage);
+    }
+  }
+
+  const getData = (current: any, pageSize: any) => {
+    // Normally you should get the data from the server
+    return data.slice((current - 1) * pageSize, current * pageSize);
+  };
+
+  const PaginationChange = (page: any, pageSize: any) => {
+    setCurrent(page);
+    setSize(pageSize)
+  }
+
+  const PrevNextArrow = (current: any, type: any, originalElement: any) => {
+    if (type === 'prev') {
+      return <button><i className="fa fa-angle-double-left"></i></button>;
+    }
+    if (type === 'next') {
+      return <button><i className="fa fa-angle-double-right"></i></button>;
+    }
+    return originalElement;
+  }
 
   const handleChange = (e: any) => {
     const value = e.target.value;
@@ -38,40 +63,48 @@ const Candidatelist = () => {
   };
 
   const filterData = (value: any) => {
-    const lowercasedValue = value.trim();
+    const lowercasedValue = (value.trim()).toLowerCase();
     if (lowercasedValue === "") {
       setData(Candidatelists);
     } else {
       const filteredData = Candidatelists.filter((item) => {
         // Use '===' for equality comparison, and return the item or null if it doesn't match
         // console.log(item)
-        return item.jobtitle.startsWith(lowercasedValue) ||
-          item.jobtitle == lowercasedValue
+        let loweritem = (item.jobtitle).toLowerCase();
+        return loweritem.startsWith(lowercasedValue) ||
+        loweritem.toLowerCase == lowercasedValue
           ? item
           : null;
       });
-      console.log(lowercasedValue);
-      console.log();
+    
+   
       setData(filteredData); // Remove null values
     }
   };
-
+// console.log(data)
   return (
     <div className="">
       {/* title, add candidate button */}
       <div className="w-full flex flex-col mb-[15px] items-center md:flex-row md:justify-between">
         <div className="text-[#029e9d] text-sm">
-          <a href="#" className="anchor-tag">
+          <Link to="#" className="anchor-tag">
             Dashboard
-          </a>{" "}
-          / <a href="/">Candidate</a> /{" "}
-          <a href="/" className="text-[#7987a1]">
-            {" "}
+          </Link>
+          {" "}
+          / 
+          {" "}
+           <Link to="/">
+            Candidate
+           </Link> 
+           {" "}
+           /
+           {" "}
+          <Link to="/" className="text-[#7987a1]">
             Candidate List
-          </a>
+          </Link>
         </div>
 
-        <div className="">
+        <div className="mt-[10px] md:mt-0">
           <button className="Export-button">
             <span>
               <FontAwesomeIcon icon={faFileExport} />
@@ -96,10 +129,10 @@ const Candidatelist = () => {
               name="category"
               id="category"
               className="outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
-              value={entries}
-              onChange={(e) => setEntries(parseInt(e.target.value))}
+              value={size}
+              onChange={(e) => setSize(parseInt(e.target.value))}
             >
-              <option value="Show Entries">Show Entries</option>
+
               <option value="10" className="drop-option">
                 10
               </option>
@@ -115,64 +148,26 @@ const Candidatelist = () => {
       </div>
 
       {/* candidate table */}
-      <div className="hide-scroll shadows max-h-[496px] overflow-scroll overflow-x-scroll p-[24px] pt-0 bg-white mb-[15px]">
+      <div className="hide-scroll shadows max-h-[496px] min-h-[496px]  overflow-x-scroll p-[24px] pt-0 bg-white mb-[15px]">
         <CandidateTable
-          entries={entries}
-          currentPage={currentPage}
-          datas={data}
+          entries={perPage}
+          datas={getData(current, size)}
         />
       </div>
 
       {/* pagination */}
       <div className="w-full">
-        <div className="my-8 flex justify-center lg:justify-start flex-row">
-          <button
-            className="bg-white text-[hsl(180,82%,35%)] hover:text-white hover:bg-[hsl(180,82%,35%)] py-2 px-3 rounded-lg mr-1 border-[1px] border-gray-200"
-            onClick={() => setCurrentPage(Math.max(currentPage - 1, 1))}
-          >
-            Previous
-          </button>
+        <Pagination
+          className="pagination-data"
+          onChange={PaginationChange}
+          total={data.length}
+          current={current}
+          pageSize={size}
+          showSizeChanger={false}
+          itemRender={PrevNextArrow}
+          onShowSizeChange={PerPageChange}
+        />
 
-          <button
-            className={`${
-              currentPage === 1
-                ? "active-page"
-                : "bg-white text-[hsl(180,82%,35%)]"
-            } py-2 border-[1px] border-gray-200 px-4 rounded-lg mr-1`}
-            onClick={() => setCurrentPage(1)}
-          >
-            1
-          </button>
-
-          <button
-            className={`${
-              currentPage === 2
-                ? "active-page"
-                : "bg-white text-[hsl(180,82%,35%)]"
-            } py-2 border-[1px] border-gray-200 px-4 rounded-lg mr-1`}
-            onClick={() => setCurrentPage(2)}
-          >
-            2
-          </button>
-
-          <button
-            className={`${
-              currentPage === 3
-                ? "active-page"
-                : "bg-white text-[hsl(180,82%,35%)]"
-            } py-2 border-[1px] border-gray-200 px-4 rounded-lg mr-1`}
-            onClick={() => setCurrentPage(3)}
-          >
-            3
-          </button>
-
-          <button
-            className="bg-white text-[hsl(180,82%,35%)] hover:bg-[hsl(180,82%,35%)] hover:text-white py-2 border-[1px] border-gray-200 px-3 rounded-lg mr-1"
-            onClick={() => setCurrentPage(currentPage + 1)}
-          >
-            Next
-          </button>
-        </div>
       </div>
     </div>
   );

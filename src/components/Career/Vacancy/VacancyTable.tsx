@@ -11,11 +11,13 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
+import { Link } from "react-router-dom";
+import Addjobvacancy from "../AddJob";
+
 
 interface VacancyTableProps {
   entries: number;
-  currentPage: number;
-  datas: any[];
+  datas: any;
 }
 
 function PaperComponent(props: PaperProps) {
@@ -53,16 +55,18 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
 
   const deleteClickOpen = (row: number) => {
     setDeleteRow(row);
+    console.log(row)
   };
 
   const deleteClickClose = () => {
     setDeleteRow(null);
   };
 
-  const deleteConfirm = (row: number) => {
-    console.log(`Deleting row with ID: ${row}`);
-    deleteClickClose();
-  };
+ 
+  
+    
+
+  
 
   return (
     <div className="">
@@ -80,9 +84,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.datas
-            .slice((props.currentPage - 1) * props.entries, props.currentPage * props.entries)
-            .map((Vacancy: any) => (
+          {props.datas.map((Vacancy: any) => (
               <tr key={Vacancy.id}>
                 <td>{Vacancy.id}</td>
                 <td>{Vacancy.openings}</td>
@@ -109,7 +111,12 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
                 </td>
                 <td>
                   <div className="action-buttons">
-                    <a href="/Addvacancy"><FontAwesomeIcon icon={faPenToSquare} className="tb-icon" /></a>
+                    {/* <Link to="/Addvacancy"> */}
+                      <FontAwesomeIcon icon={faPenToSquare} className="tb-icon" onClick={()=>{<Addjobvacancy 
+                      // update={Vacancy}
+                      />
+                      }}/>
+                      {/* </Link> */}
                     <BackspaceOutlinedIcon
                       className="tb-icon"
                       onClick={() => {
@@ -194,7 +201,9 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button  onClick={() => deleteConfirm(deleteRow!)}>
+          <Button  
+          // onClick={() => deleteConfirm(deleteRow)}
+          >
             Confirm
           </Button>
           <Button  onClick={deleteClickClose}>
