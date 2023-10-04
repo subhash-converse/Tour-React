@@ -34,6 +34,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
   const [experience, setExperience] = React.useState(false);
   const [experienceValue,setexperienceValue] = React.useState("")
   const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
+  const [afterDeleted, setAfterDeleted] = React.useState(props.datas);
 
   const mainDutiesClickOpen = (row: number,val:any) => {
     setMainDuties(row);
@@ -62,12 +63,23 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
     setDeleteRow(null);
   };
 
- 
-  
-    
+  const deleteConfirm = (row: number) => {
+    var candidateData;
+    if (row){
+      let obj = props.datas.map((singleObj: any) => singleObj.id);
+      let len = obj.length;
+      for (let i = 0; i < len; i++) {
+        let dataId = obj[i];
 
+        if (dataId == row) {
+          candidateData = props.datas.splice(i, 1);
+          setAfterDeleted(props.datas)
+        }
+      }
+      deleteClickClose();
+    }
+  };
   
-
   return (
     <div className="">
       <table className="w-full">
@@ -202,7 +214,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
         </DialogContent>
         <DialogActions>
           <Button  
-          // onClick={() => deleteConfirm(deleteRow)}
+          onClick={() => deleteConfirm(deleteRow!)}
           >
             Confirm
           </Button>
