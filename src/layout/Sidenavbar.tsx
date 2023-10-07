@@ -15,7 +15,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import img from "../assets/images/1.jpg";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 interface CommonLayoutProps {
   children: ReactNode;
@@ -59,11 +59,8 @@ const Sidenavbar: React.FC<CommonLayoutProps> = ({ children }) => {
   };
 
   function hovermenu(){
-    console.log("hello")
     setHoverNavVisible(!hoverNavVisible)
   }
-  console.log(hoverNavVisible)
-  console.log(navVisible)
 
 // const myNavbar = document.getElementsByClassName('mqin')
 // console.log(myNavbar)

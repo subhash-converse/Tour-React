@@ -1,12 +1,11 @@
 import {
-    faArrowLeft,
-    faCircleExclamation,
-  } from "@fortawesome/free-solid-svg-icons";
-  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-  import { Link } from "react-router-dom";
-  import * as Yup from "yup";
-  import { useForm } from "react-hook-form";
-  import { yupResolver } from "@hookform/resolvers/yup";
+  faArrowLeft
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+import * as Yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
   
   const AddPackage = () => {
     const validationSchema = Yup.object().shape({

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Candidatelist from "./components/Career/Candidate/CandidateList";
 import Vacancylist from "./components/Career/Vacancy/VacancyList";
 import Sidenavbar from "./layout/Sidenavbar";
-import Addjobvacancy from "./components/Career/AddJob";
+import Addjobvacancy from "./components/Career/Vacancy/AddJob";
 import AllPackageList from "./components/PackagesManagement/PackageManagementList/AllPackageList";
 import AddPackage from "./components/PackagesManagement/AddPackage";
 

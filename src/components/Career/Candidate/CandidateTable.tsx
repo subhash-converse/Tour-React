@@ -12,7 +12,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
 import TextField from '@mui/material/TextField'; // Import the TextField component from Material-UI
-import Candidatelists from "../../../Mock/Candidatelists";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 
@@ -45,14 +44,14 @@ const CandidateTable: React.FC<table> = (props) => {
   const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
   const [afterDeleted, setAfterDeleted] = React.useState(props.datas);
 
- 
+
   const Cover = [
     // { uri: "https://url-to-my-pdf.pdf" }, // Remote file
-    { 
-       uri: "https://calibre-ebook.com/downloads/demos/demo.docx", 
-      fileType:"docx",
-      fileName:"demo.docx"
-    } 
+    {
+      uri: "https://calibre-ebook.com/downloads/demos/demo.docx",
+      fileType: "docx",
+      fileName: "demo.docx"
+    }
   ];
 
   // const Xlsx = [
@@ -92,13 +91,13 @@ const CandidateTable: React.FC<table> = (props) => {
     setOtherFiles(false);
   };
   // edit
-  const editClickOpen = (row:number) => {
+  const editClickOpen = (row: number) => {
     setEdit(true);
     setEditValue(row)
     console.log(row)
   };
   console.log(editValue)
-  
+
   const editClickClose = () => {
     setEdit(false);
   };
@@ -119,13 +118,13 @@ const CandidateTable: React.FC<table> = (props) => {
 
   const deleteConfirm = (row: number) => {
     var candidateData;
-    if (row){
+    if (row) {
       let obj = props.datas.map((singleObj: any) => singleObj.id);
       let len = obj.length;
       for (let i = 0; i < len; i++) {
         let dataId = obj[i];
 
-        if (dataId == row) {
+        if (dataId === row) {
           candidateData = props.datas.splice(i, 1);
           setAfterDeleted(props.datas)
         }
@@ -246,9 +245,9 @@ const CandidateTable: React.FC<table> = (props) => {
         aria-labelledby="draggable-dialog-title"
       >
         <DialogContent>
-        <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers} 
-        style={{height:"600px", width:""}}
-        />
+          <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers}
+            style={{ height: "600px", width: "" }}
+          />
         </DialogContent>
         <DialogActions>
           <Button onClick={coverLetterClickClose}>Cancel</Button>
@@ -271,9 +270,9 @@ const CandidateTable: React.FC<table> = (props) => {
           CV
         </DialogTitle>
         <DialogContent>
-        <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers} 
-        style={{height:"600px", width:""}}
-        />
+          <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers}
+            style={{ height: "600px", width: "" }}
+          />
         </DialogContent>
         <DialogActions>
           <Button onClick={cvClickClose}>Cancel</Button>
@@ -296,9 +295,9 @@ const CandidateTable: React.FC<table> = (props) => {
           otherFiles
         </DialogTitle>
         <DialogContent>
-        <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers} 
-        style={{height:"600px", width:""}}
-        />
+          <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers}
+            style={{ height: "600px", width: "" }}
+          />
         </DialogContent>
         <DialogActions>
           <Button onClick={otherFilesClickClose}>Cancel</Button>
@@ -323,72 +322,72 @@ const CandidateTable: React.FC<table> = (props) => {
           update
         </DialogTitle>
         <DialogContent>
-  <TextField
-    label="Image"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="DOB"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Address"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Linked In URL"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Marital Status"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Current Job"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Current Job"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Job Title"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Salary"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="Education"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="COVER LETTER"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="CV"
-    fullWidth
-    margin="normal"
-  />
-  <TextField
-    label="OTHER FILES"
-    fullWidth
-    margin="normal"
-  />
-</DialogContent>
+          <TextField
+            label="Image"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="DOB"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Address"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Linked In URL"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Marital Status"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Current Job"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Current Job"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Job Title"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Salary"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="Education"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="COVER LETTER"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="CV"
+            fullWidth
+            margin="normal"
+          />
+          <TextField
+            label="OTHER FILES"
+            fullWidth
+            margin="normal"
+          />
+        </DialogContent>
         <DialogActions>
           <Button onClick={editClickClose}>Update</Button>
           <Button onClick={editClickClose}>Cancel</Button>

@@ -1,31 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBackspace,
-  faFileExport,
-  faPlus,
+  faFileExport
 } from "@fortawesome/free-solid-svg-icons";
-import Slide from "@mui/material/Slide";
-import { TransitionProps } from "@mui/material/transitions"; // Correct import path
 import CandidateTable from "./CandidateTable";
 import Candidatelists from "../../../Mock/Candidatelists";
 import Pagination from 'rc-pagination';
 import { Link } from "react-router-dom";
 
-const Transition = React.forwardRef(function Transition(
-  props: TransitionProps & {
-    children: React.ReactElement<any, any>;
-  },
-  ref: React.Ref<unknown>
-) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
 
 const Candidatelist = () => {
 
   const [searchText, setSearchText] = useState("");
   const [data, setData] = useState(Candidatelists);
-  const [perPage, setPerPage] = useState(10);
+  const [perPage] = useState(10);
   const [size, setSize] = useState(10);
   const [current, setCurrent] = useState(1);
   const PerPageChange = (value: any) => {
@@ -72,16 +60,16 @@ const Candidatelist = () => {
         // console.log(item)
         let loweritem = (item.jobtitle).toLowerCase();
         return loweritem.startsWith(lowercasedValue) ||
-        loweritem.toLowerCase == lowercasedValue
+          loweritem.toLowerCase === lowercasedValue
           ? item
           : null;
       });
-    
-   
+
+
       setData(filteredData); // Remove null values
     }
   };
-// console.log(data)
+  // console.log(data)
   return (
     <div className="">
       {/* title, add candidate button */}
@@ -91,14 +79,14 @@ const Candidatelist = () => {
             Dashboard
           </Link>
           {" "}
-          / 
+          /
           {" "}
-           <Link to="/">
+          <Link to="/">
             Candidate
-           </Link> 
-           {" "}
-           /
-           {" "}
+          </Link>
+          {" "}
+          /
+          {" "}
           <Link to="/" className="text-[#7987a1]">
             Candidate List
           </Link>

@@ -1,9 +1,6 @@
-import { faDeleteLeft, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
-import FileOpenOutlinedIcon from "@mui/icons-material/FileOpenOutlined";
-import axios from "axios";
-import { useState, useEffect } from "react";
 import PackageLists from "../../../Mock/PackageLists";
 
 interface table{

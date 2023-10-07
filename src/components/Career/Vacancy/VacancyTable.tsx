@@ -12,9 +12,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
 import { Link } from "react-router-dom";
-import Addjobvacancy from "../AddJob";
 import { useParams } from 'react-router-dom';
-import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
 
@@ -33,18 +31,18 @@ function PaperComponent(props: PaperProps) {
 
 const VacancyTable: React.FC<VacancyTableProps> = (props) => {
   const [mainDuties, setMainDuties] = React.useState<number | null>(null);
-  const [mainDutiesValue,setmainDutiesValue] = React.useState("")
+  const [mainDutiesValue, setmainDutiesValue] = React.useState("")
   const [experience, setExperience] = React.useState(false);
-  const [experienceValue,setexperienceValue] = React.useState("")
+  const [experienceValue, setexperienceValue] = React.useState("")
   const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
   const [afterDeleted, setAfterDeleted] = React.useState(props.datas);
 
- 
+
 
   let { id } = useParams();
-  console.log(id,"id is")
+  console.log(id, "id is")
 
-  const mainDutiesClickOpen = (row: number,val:any) => {
+  const mainDutiesClickOpen = (row: number, val: any) => {
     setMainDuties(row);
     setmainDutiesValue(val)
   };
@@ -53,7 +51,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
     setMainDuties(null);
   };
 
-  const experienceClickOpen = (val:any) => {
+  const experienceClickOpen = (val: any) => {
     setExperience(true);
     setexperienceValue(val);
   };
@@ -73,7 +71,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
 
   const deleteConfirm = (row: number) => {
     var candidateData;
-    if (row){
+    if (row) {
       let obj = props.datas.map((singleObj: any) => singleObj.id);
       let len = obj.length;
       for (let i = 0; i < len; i++) {
@@ -87,9 +85,9 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
       deleteClickClose();
     }
   };
-  
+
   return (
-    
+
     <div className="">
       <table className="w-full table">
         <thead>
@@ -106,47 +104,47 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
         </thead>
         <tbody>
           {props.datas.map((Vacancy: any) => (
-              <tr key={Vacancy.id}>
-                <td>{Vacancy.id}</td>
-                <td>{Vacancy.openings}</td>
-                <td>{Vacancy.department}</td>
-                <td>{Vacancy.publishDate}</td>
-                <td>{Vacancy.location}</td>
-                <td>
-                  <div className=" tb-icon">
-                    <FileOpenOutlinedIcon
-                      className=" tb-icon action-buttons"
-                      onClick={() => {
-                        mainDutiesClickOpen(Vacancy.id,Vacancy.mainDuties);
-                      }}
+            <tr key={Vacancy.id}>
+              <td>{Vacancy.id}</td>
+              <td>{Vacancy.openings}</td>
+              <td>{Vacancy.department}</td>
+              <td>{Vacancy.publishDate}</td>
+              <td>{Vacancy.location}</td>
+              <td>
+                <div className=" tb-icon">
+                  <FileOpenOutlinedIcon
+                    className=" tb-icon action-buttons"
+                    onClick={() => {
+                      mainDutiesClickOpen(Vacancy.id, Vacancy.mainDuties);
+                    }}
+                  />
+                </div>
+              </td>
+              <td>
+                <div className=" tb-icon">
+                  <FileOpenOutlinedIcon
+                    className=" tb-icon action-buttons"
+                    onClick={() => { experienceClickOpen(Vacancy.experience) }}
+                  />
+                </div>
+              </td>
+              <td>
+                <div className="action-buttons">
+                  <Link to={"/Addvacancy/" + Vacancy.id}>
+                    <FontAwesomeIcon icon={faPenToSquare} className="tb-icon"
+                    // onClick={()=>{<Addjobvacancy />}}
                     />
-                  </div>
-                </td>
-                <td>
-                  <div className=" tb-icon">
-                    <FileOpenOutlinedIcon
-                      className=" tb-icon action-buttons"
-                      onClick={()=>{experienceClickOpen(Vacancy.experience)}}
-                    />
-                  </div>
-                </td>
-                <td>
-                  <div className="action-buttons">
-                    <Link to={"/Addvacancy/"+Vacancy.id}>
-                      <FontAwesomeIcon icon={faPenToSquare} className="tb-icon" 
-                      // onClick={()=>{<Addjobvacancy />}}
-                      />
-                      </Link>
-                    <BackspaceOutlinedIcon
-                      className="tb-icon"
-                      onClick={() => {
-                        deleteClickOpen(Vacancy.id);
-                      }}
-                    />
-                  </div>
-                </td>
-              </tr>
-            ))}
+                  </Link>
+                  <BackspaceOutlinedIcon
+                    className="tb-icon"
+                    onClick={() => {
+                      deleteClickOpen(Vacancy.id);
+                    }}
+                  />
+                </div>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
 
@@ -160,7 +158,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
             style={{ width: '400px', height: '300px' }} // Adjust the width and height as needed
           />
         )}
-        
+
         aria-labelledby="draggable-dialog-title"
       >
         <DialogTitle style={{ cursor: "move" }} id="draggable-dialog-title">
@@ -172,7 +170,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button  onClick={mainDutiesClickClose}>
+          <Button onClick={mainDutiesClickClose}>
             Cancel
           </Button>
         </DialogActions>
@@ -199,7 +197,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button  onClick={experienceClickClose}>
+          <Button onClick={experienceClickClose}>
             Cancel
           </Button>
         </DialogActions>
@@ -221,12 +219,12 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button  
-          onClick={() => deleteConfirm(deleteRow!)}
+          <Button
+            onClick={() => deleteConfirm(deleteRow!)}
           >
             Confirm
           </Button>
-          <Button  onClick={deleteClickClose}>
+          <Button onClick={deleteClickClose}>
             Cancel
           </Button>
         </DialogActions>

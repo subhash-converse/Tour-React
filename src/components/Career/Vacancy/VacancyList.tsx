@@ -1,36 +1,20 @@
-import * as React from "react";
-import Slide from "@mui/material/Slide";
-import { TransitionProps } from "@mui/material/transitions";
-import { Link } from "react-router-dom";
-import Vacancytable from "./VacancyTable";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import Vacancylists from "../../../Mock/Vacancylists";
-import { useState } from "react";
-import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Pagination from "rc-pagination";
+import * as React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Vacancylists from "../../../Mock/Vacancylists";
+import Vacancytable from "./VacancyTable";
 
-const Transition = React.forwardRef(function Transition(
-  props: TransitionProps & {
-    children: React.ReactElement<any, any>;
-  },
-  ref: React.Ref<unknown>
-) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
 
 const Vacancylist = () => {
-  const [entries, setEntries] = React.useState(10);
-  const [currentPage, setCurrentPage] = React.useState(1);
+  const [entries] = React.useState(10);
   const [searchText, setSearchText] = useState("");
   const [data, setData] = useState(Vacancylists);
   const [searchDepartment, setSearchDepartment] = useState("Show Entries");
-  const [DepartmentData, setDepartmentData] = useState(Vacancylists);
   const [searchLocation, setsearchLocation] = useState("");
-  const [locationData, setLocationData] = useState(Vacancylists);
-  const [page, setPage] = React.useState(1);
-  const [perPage, setPerPage] = useState(10);
+  const [perPage] = useState(10);
   const [size, setSize] = useState(perPage);
   const [current, setCurrent] = useState(1);
 
@@ -43,13 +27,13 @@ const Vacancylist = () => {
 
   const filterDepartment = (value: any) => {
     const Department = value.trim();
-    if (Department == "") {
+    if (Department === "") {
       setData(Vacancylists);
     } else {
       let filteredDepart = Vacancylists.filter((item) => {
         // console.log(item.department);
         return item.department.startsWith(Department) ||
-          item.department == Department
+          item.department === Department
           ? item
           : null;
       });
@@ -73,7 +57,7 @@ const Vacancylist = () => {
       const filteredData = Vacancylists.filter((item) => {
         let loweritem = item.openings.toLowerCase();
         return loweritem.startsWith(lowercasedValue) ||
-          loweritem == lowercasedValue
+          loweritem === lowercasedValue
           ? item
           : null;
       });
@@ -90,12 +74,12 @@ const Vacancylist = () => {
 
   const filterLocation = (value: any) => {
     const Location = value.trim();
-    if (Location == "") {
+    if (Location === "") {
       setData(data);
     } else {
       let filteredLocation = data.filter((item) => {
         // console.log(item.department);
-        return item.location.startsWith(Location) || item.location == Location
+        return item.location.startsWith(Location) || item.location === Location
           ? item
           : null;
       });
