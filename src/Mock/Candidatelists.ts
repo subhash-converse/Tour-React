@@ -1,5 +1,22 @@
+interface CandiDateListsInterface {
+  id: number,
+  dob: string,
+  address: string,
+  linkedinurl:string,
+  maritalstatus: string,
+  currentjob: string,
+  currentcompany: string,
+  jobtitle: string,
+  salary: string,
+  education: string,
+  coverletter: string,
+  cv: string,
+  otherfiles: string,
+  img: string
+}
 
-    const Candidatelists = [
+
+    const Candidatelists:CandiDateListsInterface[] = [
    
       {
         id: 1,

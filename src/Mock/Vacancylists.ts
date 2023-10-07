@@ -1,5 +1,15 @@
+interface VacancylistsInterface{
+  id: number,
+  openings: string,
+  department: string,
+  publishDate: string,
+  location: string,
+  mainDuties: string,
+  experience: string
+}
 
-const Vacancylists = [
+
+const Vacancylists:VacancylistsInterface[] = [
   {
     id: 1,
     openings: "img1",

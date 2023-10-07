@@ -20,6 +20,8 @@ interface table {
   datas: any;
 }
 
+
+
 function PaperComponent(props: PaperProps) {
   return (
     <Draggable
@@ -46,23 +48,12 @@ const CandidateTable: React.FC<table> = (props) => {
 
 
   const Cover = [
-    // { uri: "https://url-to-my-pdf.pdf" }, // Remote file
     {
       uri: "https://calibre-ebook.com/downloads/demos/demo.docx",
       fileType: "docx",
       fileName: "demo.docx"
     }
   ];
-
-  // const Xlsx = [
-  //   // { uri: "https://url-to-my-pdf.pdf" }, // Remote file
-  //   { 
-  //      uri: " https://filesamples.com/samples/document/xlsx/sample3.xlsx", 
-  //     fileType:"docx",
-  //     fileName:"demo.docx"
-  //   } 
-  // ];
-
 
   const coverLetterClickOpen = (row: number, val: string) => {
     setCoverLetter(row);
