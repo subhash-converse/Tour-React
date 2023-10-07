@@ -9,13 +9,23 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 // import { Editor } from "react-draft-wysiwyg";
 // import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import  {  useState } from "react";
+// import  {  useState } from "react";
 import { Editor } from "react-draft-wysiwyg";
 import {
   EditorState,
  
 } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import Vacancylists from "../../Mock/Vacancylists";
+
+import React, { useState } from 'react';
+import ReactQuill, { Quill } from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+
+
+
+  // <ReactQuill theme="snow" value={value} onChange={setValue} />;
+
 
 // interface update{
 //   update:any;
@@ -31,7 +41,53 @@ const Addjobvacancy = () => {
     Experience: Yup.string().required("Experience is required"),
   });
 
+
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
+  const [openings,setOpenings] = useState("")
+  const [department,setDepartment] = useState("")
+  const [location,setLocation] = useState("")
+  const [mainDuties,setMainDuties] = useState("")
+  const [experience,setExperience] = useState("")
+  const [formData, setFormData] = useState(
+    {
+    id:0,
+    openings: "",
+    department:"",
+    location:"",
+    publishDate:"",
+    mainDuties:mainDuties,
+    experience:""
+  }
+  );
+
+  var toolbarOptions = [
+    ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+    ['blockquote', 'code-block'],
+  
+    [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+    [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+    [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+    [{ 'direction': 'rtl' }],                         // text direction
+    [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+    [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+    [{ 'font': [] }],
+    [{ 'align': [] }],
+  
+    ['clean']                                         // remove formatting button
+  ];
+
+    const module= {
+      toolbar: toolbarOptions,
+    }
+
+  const [value, setValue] = useState('');
+  console.log(value)
+
+  const handleTextChange = (event:any) => {
+    setValue(event.target.value);
+  };
 
   const onEditorStateChange = (editorState: any) => {
     setEditorState(editorState);
@@ -45,11 +101,23 @@ const Addjobvacancy = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const onSubmit = (data: any) => {
-    // Display form data on success
-    alert("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
-  };
+  const handleMainduties = (event:any) => {
+   setMainDuties(event.target.value)
+  }
 
+  const handleExperience = (event:any) => {
+    setMainDuties(event.target.value)
+   }
+
+  const submitHandler = (event:any) => {
+    event.preventDefault();
+    console.log(formData);
+    console.log(Vacancylists.length+1)
+    console.log(Vacancylists.push(formData))
+    console.log(Vacancylists)
+  }
+
+// console.log(document.getElementById("mainDuties").value)
   return (
     <div className="w-full">
       {/* Button */}
@@ -83,15 +151,17 @@ const Addjobvacancy = () => {
           <span className="text-[1.25rem] font-bold">Add A Job</span>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={submitHandler}>
           <div className="w-full grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-x-10 gap-y-10 mt-10">
             <div className="flex flex-col w-full gap-2">
               <input
                 type="text"
-                id="Openings"
+                id="openings"
                 placeholder="Openings"
+                value={openings}
                 {...register("Openings")}
                 className="border-[1px] px-3 w-full h-10 md:h-12 outline-none rounded-lg border-gray-200"
+                onChange={(e)=>setOpenings(e.target.value) } 
               />
               <div className="invalid-feedback text-red-700 text-[12px]">
                 <span className="absolute z-10">
@@ -102,23 +172,24 @@ const Addjobvacancy = () => {
 
             <div className="flex flex-col w-full gap-2">
               <div className="border-[1px] w-full  border-gray-200 rounded-lg px-[10px] h-12 ">
-                <select
-                  // name="Department"
-                  id="Department"
-                  {...register("Department")}
-                  className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
-                >
-                  <option value="">Select Department</option>
-                  <option value="Department 1" className="drop-option">
-                    Department 1
-                  </option>
-                  <option value="Department 2" className="drop-option">
-                    Department 2
-                  </option>
-                  <option value="Department 3" className="drop-option">
-                    Department 3
-                  </option>
-                </select>
+                  <select
+                    // name="Department"
+                    id="department"
+                    value={department}
+                    className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
+                    onChange={(e)=>setDepartment(e.target.value) }
+                  >
+                    <option value="">Select Department</option>
+                    <option value="Department 1" className="drop-option">
+                      Department 1
+                    </option>
+                    <option value="Department 2" className="drop-option">
+                      Department 2
+                    </option>
+                    <option value="Department 3" className="drop-option">
+                      Department 3
+                    </option>
+                  </select>
               </div>
               <div className="invalid-feedback  text-red-700 text-[12px]">
                 <span className="absolute z-10">
@@ -133,7 +204,9 @@ const Addjobvacancy = () => {
                   // name="Location"
                   id="Location"
                   {...register("Location")}
+                  value={location}
                   className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
+                  onChange={(e)=>setLocation(e.target.value) }
                 >
                   <option value="">Select Location</option>
                   <option value="Location 1" className="drop-option">
@@ -159,67 +232,21 @@ const Addjobvacancy = () => {
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-x-7">
             <div className="flex flex-col w-full gap-2 ">
               <label htmlFor="MainDuties">Main Duties</label>
-              <div className="border-[1px] p-[1px] min-h-[340px]">
-                <Editor
-                  wrapperClassName="demo-wrapper"
-                  editorClassName="demo-editor"
-                  onEditorStateChange={onEditorStateChange}
-                  mention={{
-                    separator: " ",
-                    trigger: "@",
-                    suggestions: [
-                      { text: "APPLE", value: "apple", url: "apple" },
-                      { text: "BANANA", value: "banana", url: "banana" },
-                      { text: "CHERRY", value: "cherry", url: "cherry" },
-                      { text: "DURIAN", value: "durian", url: "durian" },
-                      { text: "EGGFRUIT", value: "eggfruit", url: "eggfruit" },
-                      { text: "FIG", value: "fig", url: "fig" },
-                      {
-                        text: "GRAPEFRUIT",
-                        value: "grapefruit",
-                        url: "grapefruit",
-                      },
-                      { text: "HONEYDEW", value: "honeydew", url: "honeydew" },
-                    ],
-                  }}
-                  hashtag={{}}
-                />
+              <div className="p-[1px] min-h-[340px]">
+              <ReactQuill className="h-[200px]" modules={module} theme="snow" value={mainDuties} id="mainDuties" />
               </div>
             </div>
 
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="Experience">Experience</label>
-              <div className="border-[1px] p-[1px] min-h-[340px]">
-                <Editor
-                  wrapperClassName="demo-wrapper"
-                  editorClassName="demo-editor"
-                  onEditorStateChange={onEditorStateChange}
-                  mention={{
-                    separator: " ",
-                    trigger: "@",
-                    suggestions: [
-                      { text: "APPLE", value: "apple", url: "apple" },
-                      { text: "BANANA", value: "banana", url: "banana" },
-                      { text: "CHERRY", value: "cherry", url: "cherry" },
-                      { text: "DURIAN", value: "durian", url: "durian" },
-                      { text: "EGGFRUIT", value: "eggfruit", url: "eggfruit" },
-                      { text: "FIG", value: "fig", url: "fig" },
-                      {
-                        text: "GRAPEFRUIT",
-                        value: "grapefruit",
-                        url: "grapefruit",
-                      },
-                      { text: "HONEYDEW", value: "honeydew", url: "honeydew" },
-                    ],
-                  }}
-                  hashtag={{}}
-                />
+              <div className="p-[1px] min-h-[340px]">
+              <ReactQuill className="h-[200px]" modules={module} theme="snow" value={experience} id="experience"  />
               </div>
             </div>
           </div>
 
           <div className="flex justify-center mt-9">
-            <button type="submit" className="Export-button">
+            <button type="submit" className="Export-button" onSubmit={submitHandler}>
               <span className="text-[15px]">Submit</span>
             </button>
           </div>

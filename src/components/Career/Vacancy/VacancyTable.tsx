@@ -13,6 +13,9 @@ import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
 import { Link } from "react-router-dom";
 import Addjobvacancy from "../AddJob";
+import { useParams } from 'react-router-dom';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 
 interface VacancyTableProps {
@@ -35,6 +38,11 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
   const [experienceValue,setexperienceValue] = React.useState("")
   const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
   const [afterDeleted, setAfterDeleted] = React.useState(props.datas);
+
+ 
+
+  let { id } = useParams();
+  console.log(id,"id is")
 
   const mainDutiesClickOpen = (row: number,val:any) => {
     setMainDuties(row);
@@ -81,8 +89,9 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
   };
   
   return (
+    
     <div className="">
-      <table className="w-full">
+      <table className="w-full table">
         <thead>
           <tr className=" bg-white sticky top-0">
             <th>ID</th>
@@ -123,12 +132,11 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
                 </td>
                 <td>
                   <div className="action-buttons">
-                    {/* <Link to="/Addvacancy"> */}
-                      <FontAwesomeIcon icon={faPenToSquare} className="tb-icon" onClick={()=>{<Addjobvacancy 
-                      // update={Vacancy}
+                    <Link to={"/Addvacancy/"+Vacancy.id}>
+                      <FontAwesomeIcon icon={faPenToSquare} className="tb-icon" 
+                      // onClick={()=>{<Addjobvacancy />}}
                       />
-                      }}/>
-                      {/* </Link> */}
+                      </Link>
                     <BackspaceOutlinedIcon
                       className="tb-icon"
                       onClick={() => {

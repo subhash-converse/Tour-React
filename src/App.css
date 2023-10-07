@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   margin: 0;
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 14px;
@@ -10,12 +10,89 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+@charset "UTF-8";:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #7987a1;
+  --bs-gray-dark: #212a3a;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #cbd1db;
+  --bs-gray-500: #aeb7c5;
+  --bs-gray-600: #7987a1;
+  --bs-gray-700: #41516c;
+  --bs-gray-800: #212a3a;
+  --bs-gray-900: #060c17;
+  --bs-primary: #029e9d;
+  --bs-secondary: #7987a1;
+  --bs-success: #05a34a;
+  --bs-info: #66d1d1;
+  --bs-warning: #fbbc06;
+  --bs-danger: #ff3366;
+  --bs-light: #e9ecef;
+  --bs-dark: #060c17;
+  --bs-primary-rgb: 101, 113, 255;
+  --bs-secondary-rgb: 121, 135, 161;
+  --bs-success-rgb: 5, 163, 74;
+  --bs-info-rgb: 102, 209, 209;
+  --bs-warning-rgb: 251, 188, 6;
+  --bs-danger-rgb: 255, 51, 102;
+  --bs-light-rgb: 233, 236, 239;
+  --bs-dark-rgb: 6, 12, 23;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 0, 0, 0;
+  --bs-body-bg-rgb: 249, 250, 251;
+  --bs-font-sans-serif: "Roboto", Helvetica, sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 0.875rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #232323;
+  --bs-body-bg: #f9fafb
 }
 
-code {
+*,*::before,*::after {
+  box-sizing: border-box
+}
+
+@media(prefers-reduced-motion:no-preference) {
+  :root {
+      scroll-behavior: smooth
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 .App {
   text-align: center;
@@ -56,7 +133,7 @@ code {
     transform: rotate(360deg);
   }
 }
-table th,
+/* table th,
 td {
   padding: 20px 10px;
   text-align: start;
@@ -65,7 +142,7 @@ td {
 
 tr:nth-child(odd) {
   background-color: #ffffff;
-}
+} */
 
 .notification-circle {
   width: 10px;
@@ -151,7 +228,7 @@ li {
 }
 
 body {
-  font-family: "Roboto", Helvetica, sans-serif;
+  /* font-family: "Roboto", Helvetica, sans-serif; */
   font-size: 14px;
 }
 
@@ -220,6 +297,65 @@ tr:nth-child(even) {
   background-color: #fbfbfb !important;
 }
 
+.table, .datepicker table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #232323;
+  --bs-table-striped-bg: #e9ecef;
+  --bs-table-active-color: #232323;
+  --bs-table-active-bg: #dee2e6;
+  --bs-table-hover-color: #232323;
+  --bs-table-hover-bg: #e9ecef;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #232323;
+  vertical-align: top;
+  border-color: #e9ecef;
+  white-space: nowrap;
+}
+.table > :not(caption) > * > *, .datepicker table > :not(caption) > * > * {
+  padding: 0.85rem 0.85rem;
+}
+.table > tbody, .datepicker table > tbody {
+  vertical-align: inherit;
+}
+.table > thead, .datepicker table > thead {
+  vertical-align: bottom;
+}
+.table > :not(:first-child), .datepicker table > :not(:first-child) {
+  border-top: 2px solid #e9ecef;
+}
+
+.table,.datepicker table {
+  margin-bottom: 0
+}
+
+.table>:not(:last-child)>:last-child>*,.datepicker table>:not(:last-child)>:last-child>* {
+  border-bottom-color: inherit
+}
+
+.table thead th,.datepicker table thead th {
+  border-top: 0;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #232323;
+  padding-top: 50px;
+}
+
+.table thead th i,.datepicker table thead th i {
+  margin-left: .325rem
+}
+
+.table td img,.datepicker table td img {
+  width: 100%;
+  border-radius: 5px
+}
+.table td img,.datepicker table td img {
+  width: 39px !important;
+  border-radius: 5px
+}
+
 @media only screen and (min-width: 375px) {
   .table td,
   th {
@@ -242,7 +378,7 @@ tr:nth-child(even) {
 @media only screen and (min-width: 1440px) {
   .table td,
   th {
-    padding: 20px 15px;
+    padding: 15px 15px;
   }
 }
 
@@ -432,48 +568,11 @@ tr:nth-child(even) {
   background: rgba(255,255,255) !important;
 }
 
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css);
 @import url(https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css);
 
-
-/* a, a:hover, a:focus {
-    text-decoration: none;
-    transition: 0.5s;
-    outline: none;
-} */
-
-/* -----Search-filter */
-/* .form-control {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 15px 20px;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #475f7b;
-    background-color: #fff;
-    border: 1px solid #dfe3e7;
-    border-radius: 0.267rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-} */
-/* .form-control:focus {
-    color: #475f7b;
-    background-color: #fff;
-    border-color: #5a8dee;
-    outline: 0;
-    box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
-} */
-/* .card {
-     box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
-    background-color: #fff;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    color: #475f7b;
-    overflow: hidden;
-} */
 .pagination-data{
   padding: 0;
   margin: 0;
@@ -522,7 +621,7 @@ tr:nth-child(even) {
     min-width: 28px;
     height: 28px;
     color: rgba(0,0,0,.85);
-    font-family: Arial;
+    /* font-family: Arial; */
     line-height: 28px;
     text-align: center;
     vertical-align: middle;
@@ -608,7 +707,7 @@ a:hover{
   text-decoration: none;
   
 }
-/* -------------------------------------------------------- */
+
 .hide-scroll {
   overflow-x: auto;
   max-width: 100%;
@@ -629,12 +728,10 @@ a:hover{
 }
 
 /* Optional: To style the table headers or data cells */
-.scrolling-table th {
+/* .scrolling-table th {
   background-color: #f0f0f0;
-  /* Add more styles */
 }
 
 .scrolling-table td {
   border: 1px solid #ddd;
-  /* Add more styles */
-}
+} */

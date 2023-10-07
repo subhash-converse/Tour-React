@@ -12,9 +12,9 @@
         jobtitle: 'developer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -28,9 +28,9 @@
         jobtitle: 'developer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -44,9 +44,9 @@
         jobtitle: 'developer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -60,9 +60,9 @@
         jobtitle: 'developer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -76,9 +76,9 @@
         jobtitle: 'Data Engineer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -92,9 +92,9 @@
         jobtitle: 'Data Engineer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -108,9 +108,9 @@
         jobtitle: 'Data Engineer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -124,9 +124,9 @@
         jobtitle: 'Data Engineer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -140,9 +140,9 @@
         jobtitle: 'Data Engineer',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -156,9 +156,9 @@
         jobtitle: 'Ui/Ux',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -172,9 +172,9 @@
         jobtitle: 'Ui/Ux',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -188,9 +188,9 @@
         jobtitle: 'Ui/Ux',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -204,9 +204,9 @@
         jobtitle: 'Ui/Ux',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -220,9 +220,9 @@
         jobtitle: 'Ui/Ux',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -236,9 +236,9 @@
         jobtitle: 'Ui/Ux',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -252,9 +252,9 @@
         jobtitle: 'Ui/Ux',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -268,9 +268,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -284,9 +284,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -300,9 +300,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -316,9 +316,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -332,9 +332,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -348,9 +348,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -364,9 +364,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -380,9 +380,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -396,9 +396,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -412,9 +412,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -428,9 +428,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -444,9 +444,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -460,9 +460,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -476,9 +476,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -492,9 +492,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -508,9 +508,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -524,9 +524,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -540,9 +540,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -556,9 +556,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -572,9 +572,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -588,9 +588,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -604,9 +604,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -620,9 +620,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -636,9 +636,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -652,9 +652,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -668,9 +668,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -684,9 +684,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -700,9 +700,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -716,9 +716,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -732,9 +732,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -748,9 +748,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -764,9 +764,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -780,9 +780,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -796,9 +796,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -812,9 +812,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -828,9 +828,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -844,9 +844,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -860,9 +860,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -876,9 +876,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -892,9 +892,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -908,9 +908,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -924,9 +924,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -940,9 +940,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -956,9 +956,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -972,9 +972,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
 
@@ -989,9 +989,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1005,9 +1005,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1021,9 +1021,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1037,9 +1037,9 @@
         jobtitle: 'power pages',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1053,9 +1053,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1069,9 +1069,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1085,9 +1085,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1101,9 +1101,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1117,9 +1117,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1133,9 +1133,9 @@
         jobtitle: 'ADF',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1149,9 +1149,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1165,9 +1165,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1181,9 +1181,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1197,9 +1197,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1213,9 +1213,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1229,9 +1229,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1245,9 +1245,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1261,9 +1261,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1277,9 +1277,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1293,9 +1293,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1309,9 +1309,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1325,9 +1325,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1341,9 +1341,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
       {
@@ -1357,9 +1357,9 @@
         jobtitle: 'mu sql',
         salary: '60000',
         education: 'Master of Business Administration',
-        coverletter: 'Another cover letter text',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        coverletter: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       },
 
@@ -1375,8 +1375,8 @@
         salary: '60000',
         education: 'Master of Business Administration',
         coverletter: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=FKluB7HrwWkLLM',
-        cv: 'https://www.google.com/search?q=cv&sca_esv=569660528&tbm=isch&sxsrf=AM9HkKl_bxae8lYS5v8ko24J24QTAcaS4A:1696052580575&source=lnms&sa=X&ved=2ahUKEwjojNec0NGBAxW_SmwGHfd7D9sQ_AUoAXoECAIQAw&biw=1850&bih=944&dpr=1#imgrc=Bl7ae32o8ihSpM',
-        otherfiles: 'https://www.google.com/search?q=cover+letter&sca_esv=570013460&tbm=isch&sxsrf=AM9HkKkQscvHJJ2FMVQTrgRcHSU4yho2Ng:1696250830731&source=lnms&sa=X&ved=2ahUKEwjMtdzhsteBAxVMs1YBHXQyCNEQ_AUoAXoECAEQAw&biw=1850&bih=944&dpr=1#imgrc=vFCq4-_yA8T7hM',
+        cv: 'https://filesamples.com/samples/document/xlsx/sample3.xlsx',
+        otherfiles: '"https://calibre-ebook.com/downloads/demos/demo.docx"',
         img: 'https://htmldesigntemplates.com/html/travelin/images/reviewer/1.jpg'
       }
 

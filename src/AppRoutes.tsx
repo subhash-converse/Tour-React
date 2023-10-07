@@ -34,6 +34,10 @@ const AppRoutes: React.FC = () => {
           path="/Addvacancy"
           element={<Sidenavbar><Addjobvacancy /></Sidenavbar>}
         />
+        <Route
+          path="/Addvacancy/:vacancyid"  
+          element={<Sidenavbar><Addjobvacancy /></Sidenavbar>}
+        />
       </Routes>
     </Router>
   );

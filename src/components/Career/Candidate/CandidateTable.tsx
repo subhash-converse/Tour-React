@@ -13,7 +13,8 @@ import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
 import TextField from '@mui/material/TextField'; // Import the TextField component from Material-UI
 import Candidatelists from "../../../Mock/Candidatelists";
-// import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
+
 
 interface table {
   entries: number;
@@ -43,6 +44,25 @@ const CandidateTable: React.FC<table> = (props) => {
   const [editValue, setEditValue] = React.useState(0);
   const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
   const [afterDeleted, setAfterDeleted] = React.useState(props.datas);
+
+ 
+  const Cover = [
+    // { uri: "https://url-to-my-pdf.pdf" }, // Remote file
+    { 
+       uri: "https://calibre-ebook.com/downloads/demos/demo.docx", 
+      fileType:"docx",
+      fileName:"demo.docx"
+    } 
+  ];
+
+  // const Xlsx = [
+  //   // { uri: "https://url-to-my-pdf.pdf" }, // Remote file
+  //   { 
+  //      uri: " https://filesamples.com/samples/document/xlsx/sample3.xlsx", 
+  //     fileType:"docx",
+  //     fileName:"demo.docx"
+  //   } 
+  // ];
 
 
   const coverLetterClickOpen = (row: number, val: string) => {
@@ -116,7 +136,7 @@ const CandidateTable: React.FC<table> = (props) => {
 
   return (
     <div>
-      <table className="w-full">
+      <table className="w-full table">
         <thead>
           <tr className="bg-white sticky top-0">
             <th>ID</th>
@@ -140,7 +160,7 @@ const CandidateTable: React.FC<table> = (props) => {
           {props.datas.map((candidate: any) => (
             <tr>
               <td>{candidate.id}</td>
-              <td>
+              <td className="image-padding">
                 <img
                   className="rounded-md h-[40px] w-[38px]"
                   src={candidate.img}
@@ -220,13 +240,15 @@ const CandidateTable: React.FC<table> = (props) => {
         PaperComponent={(props) => (
           <PaperComponent
             {...props}
-            style={{ width: "500px", height: "400px" }} // Adjust the width and height as needed
+            style={{ width: "600px", height: "700px" }} // Adjust the width and height as needed
           />
         )}
         aria-labelledby="draggable-dialog-title"
       >
         <DialogContent>
-          {/* <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} /> */}
+        <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers} 
+        style={{height:"600px", width:""}}
+        />
         </DialogContent>
         <DialogActions>
           <Button onClick={coverLetterClickClose}>Cancel</Button>
@@ -240,7 +262,7 @@ const CandidateTable: React.FC<table> = (props) => {
         PaperComponent={(props) => (
           <PaperComponent
             {...props}
-            style={{ width: "500px", height: "400px" }}
+            style={{ width: "600px", height: "700px" }}
           />
         )}
         aria-labelledby="draggable-dialog-title"
@@ -249,7 +271,9 @@ const CandidateTable: React.FC<table> = (props) => {
           CV
         </DialogTitle>
         <DialogContent>
-          {/* <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} /> */}
+        <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers} 
+        style={{height:"600px", width:""}}
+        />
         </DialogContent>
         <DialogActions>
           <Button onClick={cvClickClose}>Cancel</Button>
@@ -263,7 +287,7 @@ const CandidateTable: React.FC<table> = (props) => {
         PaperComponent={(props) => (
           <PaperComponent
             {...props}
-            style={{ width: "500px", height: "400px" }} // Adjust the width and height as needed
+            style={{ width: "600px", height: "700px" }} // Adjust the width and height as needed
           />
         )}
         aria-labelledby="draggable-dialog-title"
@@ -272,7 +296,9 @@ const CandidateTable: React.FC<table> = (props) => {
           otherFiles
         </DialogTitle>
         <DialogContent>
-          {/* <DocViewer pluginRenderers={DocViewerRenderers} documents={docs} /> */}
+        <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers} 
+        style={{height:"600px", width:""}}
+        />
         </DialogContent>
         <DialogActions>
           <Button onClick={otherFilesClickClose}>Cancel</Button>
