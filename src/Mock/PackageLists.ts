@@ -573,14 +573,7 @@ const PackageLists=[
       "reviews": "Positive reviews for Package 2",
       "score": "4.2",
       "tax": "8"
-    },
+    }
     
   ]
-  
-  
-  
-  
-  
-  
-
 export default PackageLists;

@@ -6,20 +6,26 @@ import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-// import { Editor } from "react-draft-wysiwyg";
-// import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-// import  {  useState } from "react";
+
 import {
   EditorState,
 
 } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import Vacancylists from "../../../Mock/Vacancylists";
-
 import { useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
+interface addJob{
+  id: number,
+  openings:string,
+  department:string,
+  location:string,
+  publishDate:string,
+  mainDuties:string,
+  experience:string
+}
 
 const Addjobvacancy = () => {
   const validationSchema = Yup.object().shape({
@@ -38,22 +44,23 @@ const Addjobvacancy = () => {
   const [location, setLocation] = useState("")
   const [mainDuties, setMainDuties] = useState("")
   const [experience, setExperience] = useState("")
-  const [formData, setFormData] = useState(
+  const [formData, setFormData] = useState<addJob>(
     {
-      id: 0,
-      openings: "",
-      department: "",
-      location: "",
-      publishDate: "",
-      mainDuties: mainDuties,
-      experience: ""
+      id:0,
+      openings:"",
+      department:"",
+      location:"",
+      publishDate:"",
+      mainDuties:"",
+      experience:""
     }
   );
+ 
+  // console.log(formData)
 
   var toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
     ['blockquote', 'code-block'],
-
     [{ 'header': 1 }, { 'header': 2 }],               // custom button values
     [{ 'list': 'ordered' }, { 'list': 'bullet' }],
     [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
@@ -65,7 +72,7 @@ const Addjobvacancy = () => {
     [{ 'font': [] }],
     [{ 'align': [] }],
 
-    ['clean']                                         // remove formatting button
+    ['clean']                                      
   ];
 
   const module = {
@@ -73,15 +80,8 @@ const Addjobvacancy = () => {
   }
 
   const [value, setValue] = useState('');
-  console.log(value)
+  // console.log(value)
 
-  const handleTextChange = (event: any) => {
-    setValue(event.target.value);
-  };
-
-  const onEditorStateChange = (editorState: any) => {
-    setEditorState(editorState);
-  };
 
   const {
     register,
@@ -91,26 +91,30 @@ const Addjobvacancy = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const handleMainduties = (event: any) => {
-    setMainDuties(event.target.value)
+  const handleChangeMainDuties = (content:any, delta:any, source:any, editor:any) => {
+  
+    setMainDuties(editor.getHTML())
   }
+  const handleChangeExperience = (content:any, delta:any, source:any, editor:any) => {
 
-  const handleExperience = (event: any) => {
-    setMainDuties(event.target.value)
+     setExperience(editor.getHTML())
   }
 
   const submitHandler = (event: any) => {
     event.preventDefault();
-    console.log(formData);
-    console.log(Vacancylists.length + 1)
-    console.log(Vacancylists.push(formData))
-    console.log(Vacancylists)
+    setFormData({
+     ...formData,id: Vacancylists.length+1,
+     openings:openings,
+     department:department,
+     location:location,
+     publishDate: new Date().toLocaleDateString(),
+     mainDuties:mainDuties,
+     experience:`${experience}`
+    })
+Vacancylists.push(formData)
+    console.log(formData.publishDate)
   }
-
-  const handleChange = (event: any) => {
-    console.log(event)
-  }
-  // console.log(document.getElementById("mainDuties").value)
+  
   return (
     <div className="w-full">
       {/* Button */}
@@ -226,20 +230,20 @@ const Addjobvacancy = () => {
             <div className="flex flex-col w-full gap-2 ">
               <label htmlFor="MainDuties">Main Duties</label>
               <div className="p-[1px] min-h-[340px]">
-                <ReactQuill className="h-[200px]" modules={module} theme="snow" onChange={handleChange} value={mainDuties} id="mainDuties" />
+                <ReactQuill className="h-[200px]" modules={module} theme="snow" onChange={handleChangeMainDuties} value={mainDuties} id="mainDuties" />
               </div>
             </div>
 
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="Experience">Experience</label>
               <div className="p-[1px] min-h-[340px]">
-                <ReactQuill className="h-[200px]" modules={module} theme="snow" value={experience} id="experience" />
+                <ReactQuill className="h-[200px]" modules={module} theme="snow" onChange={handleChangeExperience} value={experience} id="experience" />
               </div>
             </div>
           </div>
 
           <div className="flex justify-center mt-9">
-            <button type="submit" className="Export-button" onSubmit={submitHandler}>
+            <button type="submit" className="Export-button" >
               <span className="text-[15px]">Submit</span>
             </button>
           </div>

@@ -11,16 +11,13 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Paper, { PaperProps } from "@mui/material/Paper";
 import Draggable from "react-draggable";
-import TextField from '@mui/material/TextField'; // Import the TextField component from Material-UI
+import TextField from "@mui/material/TextField";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
-
 
 interface table {
   entries: number;
   datas: any;
 }
-
-
 
 function PaperComponent(props: PaperProps) {
   return (
@@ -34,9 +31,8 @@ function PaperComponent(props: PaperProps) {
 }
 
 const CandidateTable: React.FC<table> = (props) => {
-
   const [coverLetter, setCoverLetter] = React.useState<number | null>(null);
-  const [coverLetterValue, setCoverLetterValue] = React.useState("");
+  // const [coverLetterValue, setCoverLetterValue] = React.useState("");
   const [cv, setCv] = React.useState<boolean>(false);
   const [cvValue, setCvValue] = React.useState("");
   const [otherFiles, setOtherFiles] = React.useState<boolean>(false);
@@ -46,18 +42,17 @@ const CandidateTable: React.FC<table> = (props) => {
   const [deleteRow, setDeleteRow] = React.useState<number | null>(null);
   const [afterDeleted, setAfterDeleted] = React.useState(props.datas);
 
-
   const Cover = [
     {
       uri: "https://calibre-ebook.com/downloads/demos/demo.docx",
       fileType: "docx",
-      fileName: "demo.docx"
-    }
+      fileName: "demo.docx",
+    },
   ];
 
   const coverLetterClickOpen = (row: number, val: string) => {
     setCoverLetter(row);
-    setCoverLetterValue(val);
+    // setCoverLetterValue(val);
   };
 
   const coverLetterClickClose = () => {
@@ -84,10 +79,10 @@ const CandidateTable: React.FC<table> = (props) => {
   // edit
   const editClickOpen = (row: number) => {
     setEdit(true);
-    setEditValue(row)
-    console.log(row)
+    setEditValue(row);
+    console.log(row);
   };
-  console.log(editValue)
+  console.log(editValue);
 
   const editClickClose = () => {
     setEdit(false);
@@ -117,7 +112,7 @@ const CandidateTable: React.FC<table> = (props) => {
 
         if (dataId === row) {
           candidateData = props.datas.splice(i, 1);
-          setAfterDeleted(props.datas)
+          setAfterDeleted(props.datas);
         }
       }
       deleteClickClose();
@@ -148,7 +143,7 @@ const CandidateTable: React.FC<table> = (props) => {
         </thead>
         <tbody>
           {props.datas.map((candidate: any) => (
-            <tr>
+            <tr key={candidate.id}>
               <td>{candidate.id}</td>
               <td className="image-padding">
                 <img
@@ -236,7 +231,9 @@ const CandidateTable: React.FC<table> = (props) => {
         aria-labelledby="draggable-dialog-title"
       >
         <DialogContent>
-          <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers}
+          <DocViewer
+            documents={Cover}
+            pluginRenderers={DocViewerRenderers}
             style={{ height: "600px", width: "" }}
           />
         </DialogContent>
@@ -261,7 +258,9 @@ const CandidateTable: React.FC<table> = (props) => {
           CV
         </DialogTitle>
         <DialogContent>
-          <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers}
+          <DocViewer
+            documents={Cover}
+            pluginRenderers={DocViewerRenderers}
             style={{ height: "600px", width: "" }}
           />
         </DialogContent>
@@ -286,7 +285,9 @@ const CandidateTable: React.FC<table> = (props) => {
           otherFiles
         </DialogTitle>
         <DialogContent>
-          <DocViewer documents={Cover} pluginRenderers={DocViewerRenderers}
+          <DocViewer
+            documents={Cover}
+            pluginRenderers={DocViewerRenderers}
             style={{ height: "600px", width: "" }}
           />
         </DialogContent>
@@ -313,71 +314,19 @@ const CandidateTable: React.FC<table> = (props) => {
           update
         </DialogTitle>
         <DialogContent>
-          <TextField
-            label="Image"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="DOB"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Address"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Linked In URL"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Marital Status"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Current Job"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Current Job"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Job Title"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Salary"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="Education"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="COVER LETTER"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="CV"
-            fullWidth
-            margin="normal"
-          />
-          <TextField
-            label="OTHER FILES"
-            fullWidth
-            margin="normal"
-          />
+          <TextField label="Image" fullWidth margin="normal" />
+          <TextField label="DOB" fullWidth margin="normal" />
+          <TextField label="Address" fullWidth margin="normal" />
+          <TextField label="Linked In URL" fullWidth margin="normal" />
+          <TextField label="Marital Status" fullWidth margin="normal" />
+          <TextField label="Current Job" fullWidth margin="normal" />
+          <TextField label="Current Job" fullWidth margin="normal" />
+          <TextField label="Job Title" fullWidth margin="normal" />
+          <TextField label="Salary" fullWidth margin="normal" />
+          <TextField label="Education" fullWidth margin="normal" />
+          <TextField label="COVER LETTER" fullWidth margin="normal" />
+          <TextField label="CV" fullWidth margin="normal" />
+          <TextField label="OTHER FILES" fullWidth margin="normal" />
         </DialogContent>
         <DialogActions>
           <Button onClick={editClickClose}>Update</Button>

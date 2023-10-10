@@ -23,10 +23,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
         Languagefortour: Yup.string().required("Languagefortour is required"),
         Tourguidename: Yup.string().required("Tourguidename is required"),
         Tourguideimage: Yup.string().required("Tourguideimage is required"),
-    //   Experience: Yup.string().required("Experience is required"),
-    //   Experience: Yup.string().required("Experience is required"),
-    //   Experience: Yup.string().required("Experience is required"),
-    //   Experience: Yup.string().required("Experience is required"),
     });
   
     const {
@@ -255,60 +251,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
                 {errors.Tourguideimage?.message}
               </div>
             </div>
-  
-            {/* <div className="flex flex-col w-full gap-2">
-              <label htmlFor="Openings">Tour video</label>
-              <input
-                type="text"
-                id="Openings"
-                {...register("Openings")}
-                className="border-[1px] px-3 w-full h-10 md:h-12 outline-none rounded-lg border-gray-200"
-              />
-              <div className="invalid-feedback text-red-700 text-[12px]">
-                {errors.Openings?.message}
-              </div>
-            </div>
-  
-            <div className="flex flex-col w-full gap-2">
-              <label htmlFor="Openings">Actual amount</label>
-              <input
-                type="number"
-                id="Openings"
-                {...register("Openings")}
-                className="border-[1px] px-3 w-full h-10 md:h-12 outline-none rounded-lg border-gray-200"
-              />
-              <div className="invalid-feedback text-red-700 text-[12px]">
-                {errors.Openings?.message}
-              </div>
-            </div>
-  
-            <div className="flex flex-col w-full gap-2">
-              <label htmlFor="Openings">Current amount</label>
-              <input
-                type="number"
-                id="Openings"
-                {...register("Openings")}
-                className="border-[1px] px-3 w-full h-10 md:h-12 outline-none rounded-lg border-gray-200"
-              />
-              <div className="invalid-feedback text-red-700 text-[12px]">
-                {errors.Openings?.message}
-              </div>
-            </div>
-  
-            <div className="flex flex-col w-full gap-2">
-              <label htmlFor="Openings">tax</label>
-              <input
-                type="number"
-                id="Department"
-                {...register("Department")}
-                className="border-[1px] px-3 w-full h-10 md:h-12 outline-none rounded-lg border-gray-200"
-              />
-              <div className="invalid-feedback  text-red-700 text-[12px]">
-                {errors.Department?.message}
-              </div>
-            </div> */}
-
-  
+              
             <div className="flex justify-center mt-9">
               <button type="submit" className="Export-button">
                 <span className="text-[15px]">Submit</span>

@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 
 
 const Candidatelist = () => {
-
   const [searchText, setSearchText] = useState("");
   const [data, setData] = useState(Candidatelists);
   const [perPage] = useState(10);

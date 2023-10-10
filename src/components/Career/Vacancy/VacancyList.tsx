@@ -20,7 +20,7 @@ const Vacancylist = () => {
 
   const handleDepartment = (e: any) => {
     const value = e.target.value;
-    // console.log(value)
+    console.log(value)
     setSearchDepartment(value);
     filterDepartment(value);
   };
@@ -31,7 +31,6 @@ const Vacancylist = () => {
       setData(Vacancylists);
     } else {
       let filteredDepart = Vacancylists.filter((item) => {
-        // console.log(item.department);
         return item.department.startsWith(Department) ||
           item.department === Department
           ? item
@@ -43,7 +42,6 @@ const Vacancylist = () => {
   };
 
   const handleChange = (e: any) => {
-    // console.log(e.);
     const value = e.target.value;
     setSearchText(value);
     filterData(value);
@@ -67,7 +65,6 @@ const Vacancylist = () => {
 
   const handleLocation = (e: any) => {
     const value = e.target.value;
-    // console.log(value)
     setsearchLocation(value);
     filterLocation(value);
   };
@@ -78,7 +75,6 @@ const Vacancylist = () => {
       setData(data);
     } else {
       let filteredLocation = data.filter((item) => {
-        // console.log(item.department);
         return item.location.startsWith(Location) || item.location === Location
           ? item
           : null;
@@ -87,7 +83,6 @@ const Vacancylist = () => {
       setData(filteredLocation); // Remove null values
     }
   };
-  // console.log(Vacancylists.length)
   const PerPageChange = (value: any) => {
     setSize(value);
     const newPerPage = Math.ceil(data.length / value);
@@ -97,7 +92,6 @@ const Vacancylist = () => {
   };
 
   const getData = (current: any, pageSize: any) => {
-    // Normally you should get the data from the server
     return data.slice((current - 1) * pageSize, current * pageSize);
   };
 
