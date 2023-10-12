@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import Vacancylists from "../../../Mock/Vacancylists";
 import Vacancytable from "./VacancyTable";
 
-
 const Vacancylist = () => {
   const [entries] = React.useState(10);
   const [searchText, setSearchText] = useState("");
@@ -20,7 +19,7 @@ const Vacancylist = () => {
 
   const handleDepartment = (e: any) => {
     const value = e.target.value;
-    console.log(value)
+    console.log(value);
     setSearchDepartment(value);
     filterDepartment(value);
   };
@@ -37,7 +36,7 @@ const Vacancylist = () => {
           : null;
       });
 
-      setData(filteredDepart); // Remove null values
+      setData(filteredDepart);
     }
   };
 
@@ -59,7 +58,7 @@ const Vacancylist = () => {
           ? item
           : null;
       });
-      setData(filteredData); // Remove null values
+      setData(filteredData);
     }
   };
 
@@ -130,7 +129,7 @@ const Vacancylist = () => {
           / <Link to="/">Candidate</Link> /{" "}
           <Link to="Vacancylist" className="text-[#7987a1]">
             {" "}
-            / Vacancy List
+            Vacancy List
           </Link>
         </div>
 
@@ -223,10 +222,7 @@ const Vacancylist = () => {
 
       {/* candidate table */}
       <div className="hide-scroll shadows max-h-[496px] min-h-[496px] overflow-scroll xl:overflow-x-hidden p-[24px] pt-0 bg-white mb-[15px]">
-        <Vacancytable
-          entries={entries}
-          datas={getData(current, size)}
-        />
+        <Vacancytable entries={entries} datas={getData(current, size)} />
       </div>
 
       {/* pagenation */}

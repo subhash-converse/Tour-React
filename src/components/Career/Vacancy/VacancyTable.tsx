@@ -14,6 +14,8 @@ import Draggable from "react-draggable";
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router-dom';
 import 'react-quill/dist/quill.snow.css';
+import Addjobvacancy from "./AddJob";
+
 
 
 interface VacancyTableProps {
@@ -39,21 +41,30 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
 
 
 
-  let { id } = useParams();
-  console.log(id, "id is")
+  
 
   const mainDutiesClickOpen = (row: number, val: any) => {
     setMainDuties(row);
-    setmainDutiesValue(val)
+    setmainDutiesValue(changeFormatMain(val))
   };
 
   const mainDutiesClickClose = () => {
     setMainDuties(null);
   };
 
+  const changeFormatMain = (val:any) => {
+    let text = val
+    .replace(/<p>/g, '')
+    .replace(/<\/p>/g, '\n')
+    .replace(/<br>/g, '\n')
+    .replace(/<.*?>/g, ''); 
+
+  return text;
+  }
+
   const experienceClickOpen = (val: any) => {
     setExperience(true);
-    setexperienceValue(val);
+    setexperienceValue(changeFormatMain(val));
   };
 
   const experienceClickClose = () => {
@@ -130,9 +141,8 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
               </td>
               <td>
                 <div className="action-buttons">
-                  <Link to={"/Addvacancy/" + Vacancy.id}>
+                  <Link to={`/Addvacancy/?id=${Vacancy.id}`}>
                     <FontAwesomeIcon icon={faPenToSquare} className="tb-icon"
-                    // onClick={()=>{<Addjobvacancy />}}
                     />
                   </Link>
                   <BackspaceOutlinedIcon
@@ -141,6 +151,7 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
                       deleteClickOpen(Vacancy.id);
                     }}
                   />
+                  
                 </div>
               </td>
             </tr>

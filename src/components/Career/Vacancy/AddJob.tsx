@@ -1,30 +1,27 @@
-import {
-  faArrowLeft
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
-import {
-  EditorState,
-
-} from "draft-js";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { EditorState } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import Vacancylists from "../../../Mock/Vacancylists";
-import { useState } from 'react';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
+import { useState } from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
+import { log } from "console";
 
-interface addJob{
-  id: number,
-  openings:string,
-  department:string,
-  location:string,
-  publishDate:string,
-  mainDuties:string,
-  experience:string
+interface addJob {
+  id: number;
+  openings: string;
+  department: string;
+  location: string;
+  publishDate: string;
+  mainDuties: string;
+  experience: string;
 }
 
 const Addjobvacancy = () => {
@@ -37,51 +34,70 @@ const Addjobvacancy = () => {
     Experience: Yup.string().required("Experience is required"),
   });
 
+  const [openings, setOpenings] = useState("");
+  const [department, setDepartment] = useState("");
+  const [location, setLocation] = useState("");
+  const [mainDuties, setMainDuties] = useState("");
+  const [experience, setExperience] = useState("");
+  const [editMode, setEditMode] = useState(false);
+  const [editData, setEditData] = useState<addJob>({
+    id: 0,
+    openings: "",
+    department: "",
+    location: "",
+    publishDate: "",
+    mainDuties: "",
+    experience: "",
+  });
+  const [formData, setFormData] = useState<addJob>({
+    id: 0,
+    openings: "",
+    department: "",
+    location: "",
+    publishDate: "",
+    mainDuties: "",
+    experience: "",
+  });
 
-  const [editorState, setEditorState] = useState(EditorState.createEmpty());
-  const [openings, setOpenings] = useState("")
-  const [department, setDepartment] = useState("")
-  const [location, setLocation] = useState("")
-  const [mainDuties, setMainDuties] = useState("")
-  const [experience, setExperience] = useState("")
-  const [formData, setFormData] = useState<addJob>(
-    {
-      id:0,
-      openings:"",
-      department:"",
-      location:"",
-      publishDate:"",
-      mainDuties:"",
-      experience:""
-    }
-  );
- 
-  // console.log(formData)
+
 
   var toolbarOptions = [
-    ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-    ['blockquote', 'code-block'],
-    [{ 'header': 1 }, { 'header': 2 }],               // custom button values
-    [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-    [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
-    [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
-    [{ 'direction': 'rtl' }],                         // text direction
-    [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-    [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-    [{ 'font': [] }],
-    [{ 'align': [] }],
+    ["bold", "italic", "underline", "strike"], // toggled buttons
+    ["blockquote", "code-block"],
+    [{ header: 1 }, { header: 2 }], // custom button values
+    [{ list: "ordered" }, { list: "bullet" }],
+    [{ script: "sub" }, { script: "super" }], // superscript/subscript
+    [{ indent: "-1" }, { indent: "+1" }], // outdent/indent
+    [{ direction: "rtl" }], // text direction
+    [{ size: ["small", false, "large", "huge"] }], // custom dropdown
+    [{ header: [1, 2, 3, 4, 5, 6, false] }],
+    [{ color: [] }, { background: [] }], // dropdown with defaults from theme
+    [{ font: [] }],
+    [{ align: [] }],
 
-    ['clean']                                      
+    ["clean"],
   ];
 
   const module = {
     toolbar: toolbarOptions,
-  }
+  };
 
-  const [value, setValue] = useState('');
-  // console.log(value)
+  const Location = useLocation();
+  const idSplit = Location.search.split("=");
+  const findId = Number(idSplit[1]);
+  useEffect(() => {
+    if (findId) {
+      setEditMode(!editMode);
+    }
+  }, [findId]);
 
+  useEffect(() => {
+    let editObj = Vacancylists.forEach((a) => {
+      if (a.id == findId) {
+        setEditData(a);
+      }
+    });
+  });
 
   const {
     register,
@@ -91,43 +107,63 @@ const Addjobvacancy = () => {
     resolver: yupResolver(validationSchema),
   });
 
-  const handleChangeMainDuties = (content:any, delta:any, source:any, editor:any) => {
-  
-    setMainDuties(editor.getHTML())
-  }
-  const handleChangeExperience = (content:any, delta:any, source:any, editor:any) => {
-
-     setExperience(editor.getHTML())
-  }
+  const handleChangeMainDuties = (
+    content: any,
+    delta: any,
+    source: any,
+    editor: any
+  ) => {
+    setMainDuties(editor.getHTML());
+  };
+  const handleChangeExperience = (
+    content: any,
+    delta: any,
+    source: any,
+    editor: any
+  ) => {
+    setExperience(editor.getHTML());
+  };
 
   const submitHandler = (event: any) => {
+    const name = editMode ? "ni" : "hello";
+    console.log(name);
     event.preventDefault();
     setFormData({
-     ...formData,id: Vacancylists.length+1,
-     openings:openings,
-     department:department,
-     location:location,
-     publishDate: new Date().toLocaleDateString(),
-     mainDuties:mainDuties,
-     experience:`${experience}`
-    })
-Vacancylists.push(formData)
-    console.log(formData.publishDate)
-  }
-  
+      ...formData,
+      id: Vacancylists.length + 1,
+      openings: openings,
+      department: department,
+      location: location,
+      publishDate: new Date().toLocaleDateString(),
+      mainDuties: mainDuties,
+      experience: `${experience}`,
+    });
+
+    if (
+      formData.openings != "" &&
+      formData.department != "" &&
+      formData.location != "" &&
+      formData.publishDate != ""
+    ) {
+      Vacancylists.push(formData);
+      console.log(formData);
+    }
+  };
+
   return (
     <div className="w-full">
       {/* Button */}
       <div className="w-full flex flex-col mb-[15px] items-center md:flex-row md:justify-between">
         <div className="text-[#029e9d] text-sm">
-          <Link
-            to="#" className="anchor-tag">
+          <Link to="#" className="anchor-tag">
             Dashboard
-          </Link>
-          {" "}
-          /
-          {" "}
-          <span className="text-[#7987a1]">Add A Vacancy</span>
+          </Link>{" "}
+          /{" "}
+          {!editMode ? (
+            <span className="text-[#7987a1]"> Add A Vacancy </span>
+          ) : (
+            <span className="text-[#7987a1]"> Update A Vacancy</span>
+          )}
         </div>
 
         <div className="">
@@ -145,7 +181,11 @@ Vacancylists.push(formData)
       {/* Add candidate form */}
       <div className="py-4 add-vacancy-form px-[3.5rem]">
         <div className="mt-5">
-          <span className="text-[1.25rem] font-bold">Add A Job</span>
+          {!editMode ? (
+            <span className="text-[1.25rem] font-bold">Add A Job</span>
+          ) : (
+            <span className="text-[1.25rem] font-bold">Update A Job</span>
+          )}
         </div>
 
         <form onSubmit={submitHandler}>
@@ -155,7 +195,8 @@ Vacancylists.push(formData)
                 type="text"
                 id="openings"
                 placeholder="Openings"
-                value={openings}
+                value={openings || editData.openings||""}
+                required
                 {...register("Openings")}
                 className="border-[1px] px-3 w-full h-10 md:h-12 outline-none rounded-lg border-gray-200"
                 onChange={(e) => setOpenings(e.target.value)}
@@ -172,7 +213,8 @@ Vacancylists.push(formData)
                 <select
                   // name="Department"
                   id="department"
-                  value={department}
+                  value={department || editData.department}
+                  required
                   className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
                   onChange={(e) => setDepartment(e.target.value)}
                 >
@@ -200,8 +242,9 @@ Vacancylists.push(formData)
                 <select
                   // name="Location"
                   id="Location"
+                  required
                   {...register("Location")}
-                  value={location}
+                  value={location || editData.location}
                   className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
                   onChange={(e) => setLocation(e.target.value)}
                 >
@@ -230,21 +273,41 @@ Vacancylists.push(formData)
             <div className="flex flex-col w-full gap-2 ">
               <label htmlFor="MainDuties">Main Duties</label>
               <div className="p-[1px] min-h-[340px]">
-                <ReactQuill className="h-[200px]" modules={module} theme="snow" onChange={handleChangeMainDuties} value={mainDuties} id="mainDuties" />
+                <ReactQuill
+                  className="h-[200px]"
+                  modules={module}
+                  theme="snow"
+                  placeholder="Enter main duties"
+                  onChange={handleChangeMainDuties}
+                  value={mainDuties || editData.mainDuties}
+                  id="mainDuties"
+                />
               </div>
             </div>
 
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="Experience">Experience</label>
               <div className="p-[1px] min-h-[340px]">
-                <ReactQuill className="h-[200px]" modules={module} theme="snow" onChange={handleChangeExperience} value={experience} id="experience" />
+                <ReactQuill
+                  className="h-[200px]"
+                  modules={module}
+                  theme="snow"
+                  placeholder="Enter main experience"
+                  onChange={handleChangeExperience}
+                  value={experience || editData.experience}
+                  id="experience"
+                />
               </div>
             </div>
           </div>
 
           <div className="flex justify-center mt-9">
-            <button type="submit" className="Export-button" >
-              <span className="text-[15px]">Submit</span>
+            <button type="submit" className="Export-button">
+              {!editMode ? (
+                <span className="text-[15px]">Submit</span>
+              ) : (
+                <span className="text-[15px]">Update</span>
+              )}
             </button>
           </div>
         </form>
