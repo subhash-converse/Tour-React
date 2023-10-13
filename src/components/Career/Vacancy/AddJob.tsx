@@ -28,17 +28,12 @@ const Addjobvacancy = () => {
   const validationSchema = Yup.object().shape({
     Openings: Yup.string().required("Openings is required"),
     Department: Yup.string().required("Department is required"),
-    Location: Yup.string().required("Location is required"),
+    location: Yup.string().required("location is required"),
     PublishedDate: Yup.string().required("PublishedDate is required"),
     MainDuties: Yup.string().required("MainDuties is required"),
     Experience: Yup.string().required("Experience is required"),
   });
 
-  const [openings, setOpenings] = useState("");
-  const [department, setDepartment] = useState("");
-  const [location, setLocation] = useState("");
-  const [mainDuties, setMainDuties] = useState("");
-  const [experience, setExperience] = useState("");
   const [editMode, setEditMode] = useState(false);
   const [editData, setEditData] = useState<addJob>({
     id: 0,
@@ -49,6 +44,7 @@ const Addjobvacancy = () => {
     mainDuties: "",
     experience: "",
   });
+
   const [formData, setFormData] = useState<addJob>({
     id: 0,
     openings: "",
@@ -58,8 +54,6 @@ const Addjobvacancy = () => {
     mainDuties: "",
     experience: "",
   });
-
-
 
   var toolbarOptions = [
     ["bold", "italic", "underline", "strike"], // toggled buttons
@@ -82,8 +76,8 @@ const Addjobvacancy = () => {
     toolbar: toolbarOptions,
   };
 
-  const Location = useLocation();
-  const idSplit = Location.search.split("=");
+  const page = useLocation();
+  const idSplit = page.search.split("=");
   const findId = Number(idSplit[1]);
   useEffect(() => {
     if (findId) {
@@ -113,7 +107,7 @@ const Addjobvacancy = () => {
     source: any,
     editor: any
   ) => {
-    setMainDuties(editor.getHTML());
+    setFormData({ ...formData, mainDuties: editor.getHTML() });
   };
   const handleChangeExperience = (
     content: any,
@@ -121,33 +115,22 @@ const Addjobvacancy = () => {
     source: any,
     editor: any
   ) => {
-    setExperience(editor.getHTML());
+    setFormData({ ...formData, experience: editor.getHTML() });
+  };
+
+  const handleOnChange = (event: any) => {
+    let name = event.target.name;
+    let value = event.target.value;
+    let publishDateVal = new Date().toLocaleDateString();
+
+    setFormData({ ...formData, [name]: value, publishDate: publishDateVal });
+
   };
 
   const submitHandler = (event: any) => {
-    const name = editMode ? "ni" : "hello";
-    console.log(name);
     event.preventDefault();
-    setFormData({
-      ...formData,
-      id: Vacancylists.length + 1,
-      openings: openings,
-      department: department,
-      location: location,
-      publishDate: new Date().toLocaleDateString(),
-      mainDuties: mainDuties,
-      experience: `${experience}`,
-    });
 
-    if (
-      formData.openings != "" &&
-      formData.department != "" &&
-      formData.location != "" &&
-      formData.publishDate != ""
-    ) {
-      Vacancylists.push(formData);
-      console.log(formData);
-    }
+    Vacancylists.push(formData);
   };
 
   return (
@@ -159,11 +142,9 @@ const Addjobvacancy = () => {
             Dashboard
           </Link>{" "}
           /{" "}
-          {!editMode ? (
-            <span className="text-[#7987a1]"> Add A Vacancy </span>
-          ) : (
-            <span className="text-[#7987a1]"> Update A Vacancy</span>
-          )}
+          <span className="text-[#7987a1]">
+            {editMode ? "Update A Vacancy" : "Add A Vacancy"}{" "}
+          </span>
         </div>
 
         <div className="">
@@ -181,11 +162,9 @@ const Addjobvacancy = () => {
       {/* Add candidate form */}
       <div className="py-4 add-vacancy-form px-[3.5rem]">
         <div className="mt-5">
-          {!editMode ? (
-            <span className="text-[1.25rem] font-bold">Add A Job</span>
-          ) : (
-            <span className="text-[1.25rem] font-bold">Update A Job</span>
-          )}
+          <span className="text-[1.25rem] font-bold">
+            {editMode ? "Update A Vacancy" : "Add A Vacancy"}{" "}
+          </span>
         </div>
 
         <form onSubmit={submitHandler}>
@@ -195,11 +174,11 @@ const Addjobvacancy = () => {
                 type="text"
                 id="openings"
                 placeholder="Openings"
-                value={openings || editData.openings||""}
                 required
-                {...register("Openings")}
+                name="openings"
+                // {...register("Openings")}
                 className="border-[1px] px-3 w-full h-10 md:h-12 outline-none rounded-lg border-gray-200"
-                onChange={(e) => setOpenings(e.target.value)}
+                onChange={handleOnChange}
               />
               <div className="invalid-feedback text-red-700 text-[12px]">
                 <span className="absolute z-10">
@@ -211,12 +190,12 @@ const Addjobvacancy = () => {
             <div className="flex flex-col w-full gap-2">
               <div className="border-[1px] w-full  border-gray-200 rounded-lg px-[10px] h-12 ">
                 <select
-                  // name="Department"
+                  name="department"
                   id="department"
-                  value={department || editData.department}
+                  // value={editData.department ?? editData.department}
                   required
                   className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
-                  onChange={(e) => setDepartment(e.target.value)}
+                  onChange={handleOnChange}
                 >
                   <option value="">Select Department</option>
                   <option value="Department 1" className="drop-option">
@@ -240,29 +219,29 @@ const Addjobvacancy = () => {
             <div className="flex flex-col w-full gap-2">
               <div className="border-[1px] w-full  border-gray-200 rounded-lg px-[10px] h-12 ">
                 <select
-                  // name="Location"
-                  id="Location"
+                  id="location"
                   required
-                  {...register("Location")}
-                  value={location || editData.location}
+                  name="location"
+                  // {...register("location")}
+                  // value={formData.location || editData.location}
                   className=" outline-none bg-white text-[#7987AD] w-full h-11 flex items-center"
-                  onChange={(e) => setLocation(e.target.value)}
+                  onChange={handleOnChange}
                 >
-                  <option value="">Select Location</option>
-                  <option value="Location 1" className="drop-option">
-                    Location 1
+                  <option value="">Select location</option>
+                  <option value="location 1" className="drop-option">
+                    location 1
                   </option>
-                  <option value="Location 2" className="drop-option">
-                    Location 2
+                  <option value="location 2" className="drop-option">
+                    location 2
                   </option>
                   <option value="Location 3" className="drop-option">
-                    Location 3
+                    location 3
                   </option>
                 </select>
               </div>
               <div className="invalid-feedback  text-red-700 text-[12px]">
                 <span className="absolute z-10">
-                  {errors.Location?.message}
+                  {errors.location?.message}
                 </span>
               </div>
             </div>
@@ -279,7 +258,7 @@ const Addjobvacancy = () => {
                   theme="snow"
                   placeholder="Enter main duties"
                   onChange={handleChangeMainDuties}
-                  value={mainDuties || editData.mainDuties}
+                  // value={formData.mainDuties || editData.mainDuties}
                   id="mainDuties"
                 />
               </div>
@@ -294,7 +273,7 @@ const Addjobvacancy = () => {
                   theme="snow"
                   placeholder="Enter main experience"
                   onChange={handleChangeExperience}
-                  value={experience || editData.experience}
+                  // value={formData.experience || editData.experience}
                   id="experience"
                 />
               </div>
@@ -303,11 +282,9 @@ const Addjobvacancy = () => {
 
           <div className="flex justify-center mt-9">
             <button type="submit" className="Export-button">
-              {!editMode ? (
-                <span className="text-[15px]">Submit</span>
-              ) : (
-                <span className="text-[15px]">Update</span>
-              )}
+              <span className="text-[15px]">
+                {editMode ? "Updete" : "Submit"}
+              </span>
             </button>
           </div>
         </form>

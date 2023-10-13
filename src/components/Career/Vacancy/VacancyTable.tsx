@@ -97,8 +97,8 @@ const VacancyTable: React.FC<VacancyTableProps> = (props) => {
     }
   };
 
-  return (
 
+  return (
     <div className="">
       <table className="w-full table">
         <thead>
